@@ -1,0 +1,65 @@
+//==============================================================================
+// Config Variables
+//==============================================================================
+// The config variables have default values that are just looking to be adjusted.
+// Use this variables to customize your Typesettings. Or take the whole thing
+// apart if you want :)
+
+// Font families and default text color.
+$font-sans: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-headline: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-serif: 'Leitura News W01', Georgia, 'Times New Roman', serif;
+$font-display-serif: 'Leitura W01 Display', Georgia, 'Times New Roman', serif;
+$font-mono: Menlo, Monaco, monospace;
+$text-color: #282832;
+
+// The vertical grid unit. Margin, padding, and line-height are set to multiples
+// of this value. This is the value that determines the baseline for our vertical
+// rhythm. The default value of 6px allows more fine tuned designs that still
+// obey vertical rhythm.
+$base-vertical-unit: 9px;
+
+// The value that multiplies the $base-vertical-unit to get the $base-line-height.
+// This gives type an ideal line-height.
+$base-line-multi: 3;
+
+// Base font size in pixels.
+$base-font-size: 18px;
+
+// Modular scale ratio that is used to figure out all the different font sizes
+$ms-ratio: 1.333;
+
+// [1] Paragraph setting that you can turn on or off the indent of the first line
+// of a new paragraph.
+// [2] Paragraph setting that you can turn on or off to have your paragraphs ragged
+// right or justified.
+$paragraph-indent: false; // [1]
+$paragraph-justify: false; // [2]
+
+// You can optionally load type styles that use Typesettings.
+$load-typesetted: false;
+
+$grey: #333;
+$light-grey: lighten($grey, 30%);
+$lighter-grey: #949494;
+$yellow: #fefac1;
+$highlight-color: $yellow;
+$link-color: #1893d8;
+$background-color: #fff;
+
+$border-width-narrow: 1px;
+$border-width-normal: $base-vertical-unit;
+$border-width-wide: $border-width-normal * 2;
+
+// Breakpoints TODO - Provide ability to generate any number of breakpoints
+$screen-xs-min: 480px;
+$screen-sm-min: 740px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xs-max: ($screen-sm-min -1px);
+$screen-sm-max: ($screen-md-min - 1px);
+$screen-md-max: ($screen-lg-min - 1px);
+
+// Grid attributes
+$grid-columns: 7;
+$grid-pad: ($base-vertical-unit * $base-line-multi) / 2;
