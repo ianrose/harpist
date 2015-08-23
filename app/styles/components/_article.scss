@@ -1,0 +1,43 @@
+.article {
+  p,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul {
+    max-width: $full-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $grid-pad;
+    padding-right: $grid-pad;
+  }
+}
+
+.article--body p:first-child {
+  margin-top: $grid-pad * -2;
+  position: relative;
+  background-color: #fff;
+  padding-top: $grid-pad;
+}
+
+.article--header {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.article--header h1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-pad;
+  padding-right: $grid-pad;
+}
+
+.article--intro {
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+}

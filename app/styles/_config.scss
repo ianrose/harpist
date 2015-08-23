@@ -8,8 +8,8 @@
 // Font families and default text color.
 $font-sans: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-headline: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-serif: 'Leitura News W01', Georgia, 'Times New Roman', serif;
-$font-display-serif: 'Leitura W01 Display', Georgia, 'Times New Roman', serif;
+$font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+$font-display-serif: 'Lora', Georgia, 'Times New Roman', serif;
 $font-mono: Menlo, Monaco, monospace;
 $text-color: #282832;
 
@@ -51,6 +51,8 @@ $border-width-narrow: 1px;
 $border-width-normal: $base-vertical-unit;
 $border-width-wide: $border-width-normal * 2;
 
+$full-width: 640px;
+
 // Breakpoints TODO - Provide ability to generate any number of breakpoints
 $screen-xs-min: 480px;
 $screen-sm-min: 740px;
@@ -62,4 +64,4 @@ $screen-md-max: ($screen-lg-min - 1px);
 
 // Grid attributes
 $grid-columns: 7;
-$grid-pad: ($base-vertical-unit * $base-line-multi) / 2;
+$grid-pad: $base-vertical-unit * $base-line-multi;

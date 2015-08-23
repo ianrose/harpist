@@ -1,0 +1,55 @@
+.layout--full {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $full-width + ($grid-pad * 2);
+}
+
+.layout--half {
+  width: 50%;
+
+  figure,
+  aside {
+    max-width: $full-width / 2;
+    margin-left: $grid-pad;
+    margin-right: $grid-pad;
+  }
+}
+
+.layout--left {
+  float: left;
+
+  figure,
+  aside {
+    float: right;
+  }
+}
+
+.layout--bleed {
+  img {
+    width: 100%;
+    max-width: none;
+  }
+
+  figcaption {
+    margin-left: $grid-pad;
+    margin-right: $grid-pad;
+  }
+}
+
+.layout--right {
+  float: right;
+}
+
+.layout--hang figure {
+  max-width: $full-width / 2;
+}
+
+.layout--hang.layout--right {
+  margin-left: $grid-pad;
+  margin-right: 5%;
+}
+
+.layout--hang.layout--left {
+  margin-left: 5%;
+  margin-right: $grid-pad;
+}

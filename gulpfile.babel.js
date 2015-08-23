@@ -100,10 +100,10 @@ gulp.task('styles', () => {
       precision: 10
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp'))
     // Concatenate and minify styles
     .pipe($.if('*.css', $.minifyCss()))
-    .pipe($.sourcemaps.write())
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'styles'}));
 });
@@ -200,7 +200,7 @@ gulp.task('default', ['clean'], cb => {
 // Run PageSpeed Insights
 gulp.task('pagespeed', cb => {
   // Update the below URL to the public URL of your site
-  pagespeed('example.com', {
+  pagespeed('storysettings.surge.sh', {
     strategy: 'mobile',
     // By default we use the PageSpeed Insights free (no API key) tier.
     // Use a Google Developer API key if you have one: http://goo.gl/RkN0vE

@@ -1,0 +1,17 @@
+.media {
+  margin-bottom: emRhythm($base-line-multi);
+}
+
+.media img {
+  display: block;
+  max-width: 100%;
+}
+
+.media--half {
+  max-width: $full-width / 2;
+  margin: 0 $grid-pad;
+}
+
+.media--video-bg {
+  width: 100vw;
+}

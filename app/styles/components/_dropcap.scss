@@ -1,0 +1,9 @@
+.dropcap {
+  display: block;
+  font-size: 5em;
+  float: left;
+  font-weight: 700;
+  line-height: $base-vertical-unit * $base-line-multi;
+  margin-right: $base-vertical-unit;
+  margin-top: 28px;
+}

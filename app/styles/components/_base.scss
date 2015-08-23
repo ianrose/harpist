@@ -60,8 +60,8 @@ h1, .h1 {
   @include setType(4, $ms-up2); // [2]
 
   @media (min-width: $screen-sm-min) {
-    margin-bottom: emRhythm(1, $ms-up4, $silent: true);
-    @include setType(7, $ms-up4);
+    margin-bottom: emRhythm(1, $ms-up5, $silent: true);
+    @include setType(8, $ms-up5);
   }
 }
 
@@ -176,8 +176,6 @@ blockquote {
   p {
     font-weight: 600;
     margin-bottom: emRhythm(1, $ms-up2);
-    text-indent: $base-vertical-unit * -1.5;
-    padding-left: $base-vertical-unit;
     @include setType(4, $ms-up2);
   }
 

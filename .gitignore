@@ -3,3 +3,5 @@ app/vendor
 dist
 .tmp
 app.yaml
+.idea
+.idea/workspace.xml

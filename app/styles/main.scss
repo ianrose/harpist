@@ -1,9 +1,29 @@
+// Configuration
 @import "config";
 
+// Reset
 @import "components/normalize";
 
+// Vendor
 @import "../vendor/typesettings/typesettings";
 
+// Components
 @import "components/base";
+@import "components/article";
+@import "components/captions";
+@import "components/credits";
+@import "components/bylines";
+@import "components/dek";
+@import "components/dropcap";
+@import "components/footnotes";
+@import "components/media";
+@import "components/page";
+@import "components/pullquote";
+@import "components/sidebar";
+@import "components/tombstone";
 
+// Layouts
 @import "layouts/default";
+
+// Helpers
+@import "helpers/classes";
