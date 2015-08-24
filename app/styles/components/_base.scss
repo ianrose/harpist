@@ -151,10 +151,10 @@ figure {
 }
 
 figcaption {
-  margin-top: $base-vertical-unit;
   color: $light-grey;
-  font-weight: 400;
   font-family: $font-sans;
+  font-weight: 400;
+  margin-top: $base-vertical-unit;
   @include setType(2, $ms-down1, $ms-up1);
 }
 
@@ -277,16 +277,6 @@ table {
   max-width: 100%;
   margin-bottom: emRhythm(3);
 }
-
-//table th,
-//table td {
-//  padding: emRhythm(1);
-//}
-
-//table tbody > tr:nth-child(even),
-//table thead > tr:nth-child(odd) {
-//  background-color: lighten($text-color, 75%);
-//}
 
 th,
 td {

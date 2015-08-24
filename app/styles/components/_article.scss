@@ -1,11 +1,12 @@
-.article {
+.article--body {
   p,
   h2,
   h3,
   h4,
   h5,
   h6,
-  ul {
+  ul,
+  ol {
     max-width: $full-width;
     margin-left: auto;
     margin-right: auto;
