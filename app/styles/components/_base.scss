@@ -124,13 +124,6 @@ p {
   margin-bottom: emRhythm($base-line-multi);
   padding-top: 0;
   padding-bottom: 0;
-  -webkit-hyphens: auto;
-  -epub-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
-  word-wrap: break-word;
 
   @media (min-width: $screen-sm-min) {
     @if $paragraph-justify {

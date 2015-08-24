@@ -13,5 +13,8 @@
 }
 
 .media--video-bg {
-  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
 }

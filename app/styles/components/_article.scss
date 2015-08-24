@@ -15,7 +15,7 @@
 }
 
 .article--body p:first-child {
-  margin-top: $grid-pad * -2;
+  margin-top: $grid-pad * -2.5;
   position: relative;
   background-color: #fff;
   padding-top: $grid-pad;
@@ -27,6 +27,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+  text-shadow: 0 0 10px #000;
 }
 
 .article--header h1 {
@@ -38,6 +39,7 @@
 
 .article--intro {
   position: absolute;
-  bottom: 40%;
+  top: 40%;
   width: 100%;
+  z-index: 1;
 }
