@@ -5,3 +5,4 @@ dist
 app.yaml
 .idea
 .idea/workspace.xml
+app/.DS_store

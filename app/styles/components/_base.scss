@@ -159,8 +159,6 @@ figcaption {
 }
 
 blockquote {
-  margin-top: emRhythm(3);
-  margin-bottom: emRhythm(3);
   margin-left: 0;
   padding-bottom: 0;
   margin-right: 0;
@@ -168,7 +166,7 @@ blockquote {
 
   p {
     font-weight: 600;
-    margin-bottom: emRhythm(1, $ms-up2);
+    margin-bottom: emRhythm($base-line-multi, $ms-up2);
     @include setType(4, $ms-up2);
   }
 
@@ -188,25 +186,6 @@ blockquote {
       }
     }
   }
-}
-
-blockquote.left,
-blockquote.right {
-  padding-top: emRhythm(2);
-  border-top: $border-width-wide solid $text-color;
-  width: 50%;
-
-  p {
-    margin-bottom: emRhythm(1, $ms-up1);
-    text-indent: $base-vertical-unit * -1.5;
-    @include setType(3, $ms-up1);
-  }
-}
-
-blockquote.left {
-  float: left;
-  margin-right: emRhythm(3);
-  margin-left: -$grid-pad;
 }
 
 pre,
@@ -276,6 +255,11 @@ table {
   width: 100%;
   max-width: 100%;
   margin-bottom: emRhythm(3);
+}
+
+table + figcaption {
+  margin-top: emRhythm(-2, $ms-down1);
+  margin-bottom: emRhythm(3, $ms-down1);
 }
 
 th,

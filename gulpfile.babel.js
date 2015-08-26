@@ -108,13 +108,13 @@ gulp.task('styles', () => {
     .pipe($.size({title: 'styles'}));
 });
 
-// Concatenate and minify JavaScript
+// Minify JavaScript
 gulp.task('scripts', () => {
-  return gulp.src(['./app/scripts/main.js'])
-    .pipe($.concat('main.min.js'))
+  return gulp.src(['./app/**/*.js'], {base: "./app"})
+    //.pipe($.concat('main.min.js'))
     .pipe($.uglify({preserveComments: 'some'}))
     // Output files
-    .pipe(gulp.dest('dist/scripts'))
+    .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'scripts'}));
 });
 
@@ -159,7 +159,7 @@ gulp.task('serve', ['styles'], () => {
   browserSync({
     notify: false,
     // Customize the BrowserSync console logging prefix
-    logPrefix: 'WSK',
+    logPrefix: 'Storysettings',
     // Run as an https by uncommenting 'https: true'
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
@@ -177,7 +177,7 @@ gulp.task('serve', ['styles'], () => {
 gulp.task('serve:dist', ['default'], () => {
   browserSync({
     notify: false,
-    logPrefix: 'WSK',
+    logPrefix: 'Storysettings',
     // Run as an https by uncommenting 'https: true'
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
@@ -191,7 +191,7 @@ gulp.task('serve:dist', ['default'], () => {
 gulp.task('default', ['clean'], cb => {
   runSequence(
     'styles',
-    ['jshint', 'html', 'scripts', 'images', 'fonts', 'copy'],
+    ['jshint', 'html', 'images', 'fonts', 'copy'],'scripts',
     'generate-service-worker',
     cb
   );

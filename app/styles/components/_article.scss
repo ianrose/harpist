@@ -15,7 +15,7 @@
   }
 }
 
-.article--body p:first-child {
+.article--body section:first-child p:first-child {
   margin-top: $grid-pad * -2.5;
   position: relative;
   background-color: #fff;
@@ -39,6 +39,8 @@
 }
 
 .article--intro {
+  padding-left: $grid-pad;
+  padding-right: $grid-pad;
   position: absolute;
   top: 40%;
   width: 100%;

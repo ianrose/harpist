@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "typesettings": "~2.4.0",
-    "jquery-2.1.4.min": "http://code.jquery.com/jquery-2.1.4.min.js"
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.4"
   }
 }
