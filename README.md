@@ -29,6 +29,11 @@ After Storysettings is running be sure to update `harp.json` with your project s
 
 Node.js
 
+## Thanks
+
+ - [Juha Karttunen](https://gist.github.com/jkarttunen/a576e8dabe3a320e224b)
+ - [Charlie Gleason](https://github.com/superhighfives/harp-gulp-browsersync-boilerplate)
+
 ## License
 
 [The MIT License (MIT)](https://github.com/ianrose/storysettings/blob/master/LICENSE)
