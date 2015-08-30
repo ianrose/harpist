@@ -1,0 +1,38 @@
+{
+  "globals": {
+    "name": "Storysettings",
+    "title": "Storysettings",
+    "url": "http://storysettings.surge.sh",
+    "description": "Bootstrap your front-end dev",
+    "authors": {
+      "firstlast": {
+        "name": "First Last",
+        "email": "first@address.com",
+        "bio": "Editor at News Org",
+        "role": "Editor",
+        "twitter": "firstLast",
+        "github": "firstLast"
+      },
+      "secondthird": {
+        "name": "Second Last",
+        "email": "second@address.com",
+        "bio": "Designer at News Org",
+        "role": "Designer",
+        "twitter": "secondLast",
+        "github": "secondLast"
+      }
+    },
+    "service": {
+      "analytics": "UA-XXXXXX-1",
+      "service": "example",
+      "googlefonts": ["Lora:400,400italic,700:latin", "Work+Sans:400,600,800:latin"]
+    },
+    "thanks": {
+      "firstlast": {
+       "name": "First Last",
+       "url": "firstlast.com"
+      }
+    }
+  },
+  "domains": []
+}
