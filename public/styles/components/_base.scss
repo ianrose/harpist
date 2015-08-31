@@ -161,30 +161,23 @@ figcaption {
 blockquote {
   margin-left: 0;
   padding-bottom: 0;
+  margin-bottom: emRhythm($base-line-multi);
   margin-right: 0;
   font-family: $font-display-serif;
 
   p {
     font-weight: 600;
-    margin-bottom: emRhythm($base-line-multi, $ms-up2);
+    margin-bottom: 0;
     @include setType(4, $ms-up2);
   }
 
-  footer {
+  cite {
     color: $light-grey;
     font-weight: 400;
     font-family: $font-sans;
-    @include setType(2, $ms-down1, $ms-up1);
-
-    strong {
-      font-weight: 400;
-    }
-    cite {
-      font-style: normal;
-      &:before {
-        content: " – ";
-      }
-    }
+    font-style: normal;
+    margin-top: emRhythm(1, $ms-down1);
+    @include setType(2, $ms-down1);
   }
 }
 
