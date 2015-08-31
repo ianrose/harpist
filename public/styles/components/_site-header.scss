@@ -1,3 +1,4 @@
-.page--header {
+.site-header {
   padding: $base-vertical-unit $grid-pad;
+  @include clearfix();
 }

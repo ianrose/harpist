@@ -4,6 +4,9 @@
 // Reset
 @import "components/normalize";
 
+// Helper Mixins and Functions
+@import "helpers/mixins-functions";
+
 // Vendor
 @import "../vendor/typesettings/typesettings";
 
@@ -17,13 +20,16 @@
 @import "components/dropcap";
 @import "components/footnotes";
 @import "components/media";
-@import "components/page";
 @import "components/pullquote";
 @import "components/sidebar";
+@import "components/site-header";
+@import "components/site-logo";
+@import "components/site-title";
+@import "components/site-top";
 @import "components/tombstone";
 
 // Layouts
 @import "layouts/default";
 
-// Helpers
+// Helper Classes
 @import "helpers/classes";
