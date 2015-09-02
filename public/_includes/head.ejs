@@ -20,7 +20,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="<%= description %>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= name %> | <%= title %></title>
+    <meta name="news_keywords" content="<%= keywords %>" />
+    <meta name="standout" content="<%= url %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% if(service.facebookid) { %><meta property="fb:app_id" content="<%= service.facebookid %>" /><% } %>
+    <meta property="og:site_name" content="<%= name %>" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:title" content="<%= title %> - <%= name %>" />
+    <meta property="og:url" content="<%= url %>" />
+    <meta property="og:type" content="article" />
+    <% if(service.socialimage) { %><meta property="og:image" content="<%= service.socialimage %>" /><% } %>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="<%= name %>" />
+    <meta name="twitter:title" content="<%= title %> - <%= name %>" />
+    <meta name="twitter:description" content="<%= description %>" />
+    <meta name="twitter:creator" content="<%= name %>" />
+    <meta name="twitter:domain" content="<%= domain %>" />
+    <% if(service.socialimage) { %><meta name="twitter:image:src" content="<%= service.socialimage %>" /><% } %>
+
+    <% if(service.appleid) { %><meta name="apple-itunes-app" content="app-id=<%= service.appleid %>, app-argument=<%= url %>"><% } %>
+    <% if(service.googleverification) { %><meta name="google-site-verification" content="<%= service.googleverification %>" /><% } %>
+
+    <title><%= title %> | <%= name %></title>
 
     <link rel="author" href="humans.txt" />
 

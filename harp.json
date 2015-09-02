@@ -4,6 +4,8 @@
     "title": "Bell Telephone Laboratories",
     "url": "http://storysettings.surge.sh",
     "description": "Bootstrap your front-end dev",
+    "keywords": "Gulp, Harp, Longform",
+    "domain": "surge.sh",
     "authors": {
       "firstlast": {
         "name": "First Last",
@@ -25,7 +27,11 @@
     "service": {
       "analytics": "UA-XXXXXX-1",
       "service": "example",
-      "googlefonts": ["Lora:400,400italic,700:latin", "Work+Sans:400,600,800:latin"]
+      "googlefonts": ["Lora:400,400italic,700:latin", "Work+Sans:400,600,800:latin"],
+      "googleverification": null,
+      "facebookid": null,
+      "socialimage": "images/social-image.jpg",
+      "appleid": null
     },
     "thanks": {
       "firstlast": {
