@@ -54,16 +54,19 @@
   float: right;
 }
 
+.layout--hang {
+  max-width: ($full-width * 2) + ($grid-pad * 2);
+  margin: 0 auto;
+}
+
 .layout--hang figure {
   max-width: $full-width / 2;
 }
 
-.layout--hang.layout--right {
-  margin-left: $grid-pad;
-  margin-right: 5%;
-}
-
-.layout--hang.layout--left {
-  margin-left: 5%;
-  margin-right: $grid-pad;
+.layout--hang {
+  .layout--right,
+  .layout--left {
+    margin-left: $grid-pad;
+    margin-right: $grid-pad;
+  }
 }
