@@ -11,11 +11,18 @@ A [Gulp](https://github.com/gulpjs/gulp) and [Harp](https://github.com/sintaxi/h
 
 ## How to Setup
 
-Get a copy of Storysettings:
+A. Get a copy of Storysettings for your project.
 
 `git clone https://github.com/ianrose/storysettings.git`
 
-At your project run `npm install` then `bower install`
+B. Install Gulp and Harp.js globally
+
+```
+$ npm install -g harp
+$ npm install -g gulp
+```
+
+C. At your project run `npm install` then `bower install`
 
 ## How to use
 
