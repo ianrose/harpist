@@ -1,0 +1,10 @@
+<footer class="credits">
+  <h2 class="h6">Credits</h2>
+  <% for(handle in authors) {
+    var author = authors[handle] %>
+  <p>
+  <div><strong><%= author.name %></strong> <%= author.role %></div>
+  <% if(author.twitter) { %> <div>@<%= author.twitter %></div> <% } %>
+  </p>
+  <% } %>
+</footer>
