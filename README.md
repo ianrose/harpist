@@ -1,4 +1,4 @@
-# Storysettings
+# Storysettings (In Development)
 
 A [Gulp](https://github.com/gulpjs/gulp) and [Harp](https://github.com/sintaxi/harp) static site generator with:
 
