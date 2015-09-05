@@ -1,0 +1,16 @@
+.share {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.share li {
+  display: inline-block;
+}
+
+.share svg {
+  fill: #000;
+  height: 18px;
+  width: 18px;
+}
