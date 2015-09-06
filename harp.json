@@ -8,18 +8,18 @@
     "domain": "surge.sh",
     "authors": {
       "firstlast": {
-        "name": "First Last",
-        "email": "first@address.com",
-        "bio": "Editor at News Org",
-        "role": "Editor",
-        "twitter": "firstLast",
-        "github": "firstLast"
+        "name": "Ian Rose",
+        "email": "ian@ianrose.me",
+        "bio": "Designer at News Org",
+        "role": "Designer",
+        "twitter": "thatianrose",
+        "github": "ianrose"
       },
       "secondthird": {
         "name": "Second Last",
         "email": "second@address.com",
-        "bio": "Designer at News Org",
-        "role": "Designer",
+        "bio": "Editor at News Org",
+        "role": "Editor",
         "twitter": "secondLast",
         "github": "secondLast"
       }
@@ -32,7 +32,8 @@
       "facebookid": null,
       "socialimage": "images/social-image.jpg",
       "appleid": null,
-      "twitter": "thatianrose"
+      "twitter": "thatianrose",
+      "disqus": "storysettings"
     },
     "thanks": {
       "firstlast": {
