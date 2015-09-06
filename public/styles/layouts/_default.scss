@@ -18,6 +18,11 @@
   }
 }
 
+.layout--pad {
+  padding-left: $grid-pad;
+  padding-right: $grid-pad;
+}
+
 .layout--half {
   width: 50%;
 
