@@ -5,6 +5,7 @@ A [Gulp](https://github.com/gulpjs/gulp) and [Harp](https://github.com/sintaxi/h
 - [Browsersync](https://github.com/BrowserSync/browser-sync)
 - [Imagemin](https://github.com/sindresorhus/gulp-imagemin)
 - [JSHint](https://github.com/spalger/gulp-jshint)
+- [JS Minification](https://github.com/terinjokes/gulp-uglify)
 - [Mondernizr](https://github.com/Modernizr/Modernizr)
 - [jQuery](https://github.com/jquery/jquery)
 - [Typesettings](https://github.com/ianrose/typesettings)
