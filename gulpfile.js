@@ -36,7 +36,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['./public/**/*.js'], {base: './public'})
+  return gulp.src(['./public/**/*.js', '!./public/vendor/**/src/**/*.js'], {base: './public'})
     .pipe(uglify())
     .pipe(gulp.dest('www'));
 });
