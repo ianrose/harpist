@@ -28,7 +28,7 @@
 
   figure,
   aside {
-    max-width: $full-width / 2;
+    max-width: ($full-width / 2) - $grid-pad;
     margin-left: $grid-pad;
     margin-right: $grid-pad;
   }
