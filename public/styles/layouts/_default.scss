@@ -24,22 +24,28 @@
 }
 
 .layout--half {
-  width: 50%;
-
-  figure,
-  aside {
-    max-width: ($full-width / 2) - $grid-pad;
-    margin-left: $grid-pad;
-    margin-right: $grid-pad;
+  @media (min-width: $screen-xs-min) {
+    width: 50%;
   }
+    figure,
+    aside {
+      @media (min-width: $screen-xs-min) {
+        max-width: ($full-width / 2) - $grid-pad;
+      }
+      margin-left: $grid-pad;
+      margin-right: $grid-pad;
+    }
+
 }
 
 .layout--left {
-  float: left;
+  @media (min-width: $screen-xs-min) {
+    float: left;
 
-  figure,
-  aside {
-    float: right;
+    figure,
+    aside {
+      float: right;
+    }
   }
 }
 
@@ -56,7 +62,9 @@
 }
 
 .layout--right {
-  float: right;
+  @media (min-width: $screen-xs-min) {
+    float: right;
+  }
 }
 
 .layout--hang {
