@@ -39,6 +39,7 @@ $paragraph-justify: false; // [2]
 // You can optionally load type styles that use Typesettings.
 $load-typesetted: false;
 
+// Colors
 $grey: #333;
 $light-grey: lighten($grey, 30%);
 $lighter-grey: #949494;
@@ -47,13 +48,12 @@ $highlight-color: $yellow;
 $link-color: #1893d8;
 $background-color: #fff;
 
+// Borders
 $border-width-narrow: 1px;
 $border-width-normal: $base-vertical-unit;
 $border-width-wide: $border-width-normal * 2;
 
-$full-width: 700px;
-
-// Breakpoints TODO - Provide ability to generate any number of breakpoints
+// Breakpoints
 $screen-xs-min: 480px;
 $screen-sm-min: 740px;
 $screen-md-min: 992px;
@@ -65,3 +65,12 @@ $screen-md-max: ($screen-lg-min - 1px);
 // Grid attributes
 $grid-columns: 7;
 $grid-pad: $base-vertical-unit * $base-line-multi;
+$full-width: 700px;
+
+// Site Header
+$site-header-height: 46px;
+
+// Progress
+$bar-height: 5px;
+$bar-background: #999999;
+$bar-color: #CCCCCC;
