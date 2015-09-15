@@ -38,17 +38,13 @@ $(document).ready(function(){
     return $article.height() - $(window).height();
   };
 
-  var getValue = function(){
-    return $(window).scrollTop();
-  };
-
   var $progress = $('.progress');
   var max = getMax();
   var value;
   var width;
 
   var getWidth = function() {
-    value = getValue();
+    value = $(window).scrollTop();
     width = (value/max) * 100;
     width = width + '%';
     return width;
