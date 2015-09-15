@@ -1,4 +1,11 @@
 .site-header {
+  background-color: $background-color;
   padding: $base-vertical-unit $grid-pad;
+  height: $site-header-height;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   @include clearfix();
 }
