@@ -5,6 +5,7 @@
     "jquery-2.1.4": "http://code.jquery.com/jquery-2.1.4.js",
     "modernizr": "~2.8.3",
     "slick-carousel": "~1.5.8",
-    "typesettings": "~2.4.0"
+    "typesettings": "~2.4.0",
+    "video.js": "~4.12.15"
   }
 }
