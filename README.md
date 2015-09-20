@@ -9,6 +9,7 @@ A [Gulp](https://github.com/gulpjs/gulp) and [Harp](https://github.com/sintaxi/h
 - [Mondernizr](https://github.com/Modernizr/Modernizr)
 - [jQuery](https://github.com/jquery/jquery)
 - [Typesettings](https://github.com/ianrose/typesettings)
+- [Video.js](https://github.com/videojs/video.js)
 
 ## How to Setup
 
