@@ -5,7 +5,12 @@
   left: 0;
   position: fixed;
   top: 0;
+  transition: top 0.2s ease-in-out;
   width: 100%;
   z-index: 2;
   @include clearfix();
+}
+
+.site-header.header-up {
+  top: $site-header-height * -1;
 }
