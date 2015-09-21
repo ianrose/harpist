@@ -57,10 +57,10 @@ $(document).ready(function(){
     }
 
     if(start > lastScrollTop && start > headerHeight) {
-      $header.removeClass('header-down').addClass('header-up');
+      $header.removeClass('is-down').addClass('is-up');
     } else {
       if (start + $(window).height() < $(document).height()) {
-        $header.removeClass('header-up').addClass('header-down');
+        $header.removeClass('is-up').addClass('is-down');
       }
     }
     lastScrollTop = start;
