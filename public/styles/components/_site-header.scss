@@ -1,5 +1,6 @@
 .site-header {
-  background-color: $background-color;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+  color: $background-color;
   padding: $base-vertical-unit $grid-pad;
   height: $site-header-height;
   left: 0;
@@ -9,6 +10,28 @@
   width: 100%;
   z-index: 2;
   @include clearfix();
+
+  a {
+    color: $background-color;
+  }
+
+  svg {
+    fill: $background-color;
+  }
+}
+
+.site-header.is-top {
+  background-image: none;
+  background-color: #fff;
+  color: $text-color;
+
+  a {
+    color: $text-color;
+  }
+
+  svg {
+    fill: $text-color;
+  }
 }
 
 .site-header.is-up {
