@@ -146,7 +146,8 @@ figcaption {
 blockquote {
   margin-left: 0;
   padding-bottom: 0;
-  margin-bottom: emRhythm($base-line-multi);
+  margin-top: emRhythm($base-line-multi * 2);
+  margin-bottom: emRhythm($base-line-multi * 2);
   margin-right: 0;
   font-family: $font-display-serif;
 
