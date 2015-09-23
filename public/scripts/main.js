@@ -99,4 +99,12 @@ $(document).ready(function(){
 
   $(document).on('scroll', progressDebounced);
   $(window).on('resize', progressDebounced);
+
+  // Waypoints
+  $('#js-article').waypoint(function() {
+      console.log('waypoint enters viewport');
+      $($header).toggleClass('is-top');
+    },
+    { offset: '0' });
+
 });
