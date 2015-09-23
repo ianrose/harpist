@@ -101,10 +101,19 @@ $(document).ready(function(){
   $(window).on('resize', progressDebounced);
 
   // Waypoints
+
+  // Changes header styles when over main art vs article body
   $('#js-article').waypoint(function() {
-      console.log('waypoint enters viewport');
       $($header).toggleClass('is-top');
-    },
-    { offset: '0' });
+    }, {
+      offset: '0'
+    });
+
+  // Fades in from the left hanging elements as they enter viewport
+  $('.js-hang').waypoint(function() {
+    $(this.element).toggleClass($(this.element).data('animated'));
+  }, {
+    offset: 'bottom-in-view'
+  });
 
 });
