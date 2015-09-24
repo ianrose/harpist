@@ -104,7 +104,8 @@ $(document).ready(function(){
 
   // Changes header styles when over main art vs article body
   $('#js-article').waypoint(function() {
-      $($header).toggleClass('is-top');
+    $($header).toggleClass('is-top');
+    $('#js-site-title').toggleClass('is-visible');
     }, {
       offset: '0'
     });
@@ -116,5 +117,12 @@ $(document).ready(function(){
   }, {
     offset: 'bottom-in-view'
   });
+
+  // Fades in from the left hanging elements as they enter viewport
+  //$('#js-site-title').waypoint(function() {
+  //  $(this.element).toggleClass($(this.element).data('animated'));
+  //}, {
+  //  offset: 'bottom-in-view'
+  //});
 
 });

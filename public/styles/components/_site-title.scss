@@ -2,4 +2,10 @@
   font-family: $font-sans;
   float: left;
   margin-right: $grid-pad;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.site-title.is-visible {
+  opacity: 1;
 }
