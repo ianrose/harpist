@@ -19,10 +19,6 @@
   transform: translateX(-50%);
 }
 
-.touch .media--video-bg {
-  display: none;
-}
-
 .media--video-embed {
   @extend .ratio-16x9;
   @extend .intrinsic-wrapper;
