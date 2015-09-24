@@ -230,10 +230,16 @@ hr {
 }
 
 table {
+  font-size: 80%;
   font-family: $font-sans;
   width: 100%;
+  overflow: scroll;
   max-width: 100%;
   margin-bottom: emRhythm(3);
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 100%;
+  }
 }
 
 table + figcaption {

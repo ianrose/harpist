@@ -42,13 +42,24 @@
   margin-right: auto;
   padding-left: $grid-pad;
   padding-right: $grid-pad;
+  @include setType(4, $ms-up2);
+
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: emRhythm(1, $ms-up5, $silent: true);
+    @include setType(8, $ms-up5);
+  }
 }
 
 .article--intro {
   padding-left: $grid-pad;
   padding-right: $grid-pad;
   position: absolute;
-  top: 40%;
+  text-align: center;
+  top: 30%;
   width: 100%;
   z-index: 1;
+
+  @media (min-width: $screen-sm-min) {
+    top: 40%;
+  }
 }

@@ -2,14 +2,14 @@
   float: right;
   list-style: none;
   margin-top: 3px;
-  margin-right: 27px;
+  margin-right: $grid-pad;
   padding: 0;
 }
 
 .share li {
   display: inline-block;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: $grid-pad / 10;
+  margin-right: $grid-pad / 10;
 }
 
 .share svg {
