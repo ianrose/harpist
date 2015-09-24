@@ -35,3 +35,7 @@
 }
 
 @include generateRatios(16,9);
+
+[data-animated^="fadeIn"] {
+  opacity: 0;
+}
