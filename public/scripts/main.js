@@ -105,7 +105,7 @@ $(document).ready(function(){
   // Changes header styles when over main art vs article body
   $('#js-article').waypoint(function() {
     $($header).toggleClass('is-top');
-    $('#js-site-title').toggleClass('is-visible');
+    $('#js-site-title').toggleClass('is-hidden');
     }, {
       offset: '0'
     });
