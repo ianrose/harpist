@@ -5,6 +5,10 @@
   width: 18px;
   margin-top: 3px;
 
+  @media (min-width: $screen-sm-min) {
+        margin-right: $grid-pad;
+  }
+
  .is-top & {
    @media (min-width: $screen-sm-min) {
      display: block;
