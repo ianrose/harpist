@@ -55,11 +55,8 @@
   padding-right: $grid-pad;
   position: absolute;
   text-align: center;
-  top: 30%;
-  width: 100%;
   z-index: 1;
-
-  @media (min-width: $screen-sm-min) {
-    top: 40%;
-  }
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
