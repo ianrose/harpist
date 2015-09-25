@@ -1,6 +1,7 @@
 .dek {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: emRhythm(1);
   max-width: $full-width + ($grid-pad * 2);
 
   @media (min-width: $screen-sm-min) {
