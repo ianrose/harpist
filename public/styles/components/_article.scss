@@ -15,6 +15,10 @@
     padding-right: $grid-pad;
   }
 
+  blockquote {
+    max-width: $full-width + ($grid-pad * 2);
+  }
+
   blockquote p {
     padding-left: 0;
     padding-right: 0;
