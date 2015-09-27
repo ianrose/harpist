@@ -8,14 +8,16 @@
 @import "helpers/mixins-functions";
 
 // Vendor
+@import "../vendor/chartist/dist/scss/chartist";
 @import "../vendor/typesettings/typesettings";
 @import "../vendor/slick-carousel/slick/slick";
 
 // Components
-@import "components/base";
-@import "components/animate";
 @import "components/article";
+@import "components/animate";
+@import "components/base";
 @import "components/captions";
+@import "components/chart";
 @import "components/credits";
 @import "components/byline";
 @import "components/dek";
