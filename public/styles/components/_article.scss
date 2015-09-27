@@ -1,4 +1,5 @@
 .article--body {
+  background-color: $background-color;
   p,
   h2,
   h3,
@@ -25,14 +26,8 @@
   }
 }
 
-.article--body section:first-child p:first-child {
-  margin-top: $grid-pad * -1;
-  position: relative;
-  background-color: #fff;
-  padding-top: $grid-pad;
-}
-
 .article--header {
+  z-index: -1;
   background-color: #000;
   color: #fff;
   height: 100vh;
@@ -61,6 +56,6 @@
   text-align: center;
   z-index: 1;
   top: 50%;
-  transform: translateY(-50%);
+  margin-top: -108px;
   width: 100%;
 }

@@ -67,7 +67,7 @@ $(document).ready(function(){
   }
 
   // Progress
-  var $article = $('.js-article');
+  var $article = $('#js-article');
 
   var getMax = function(){
     return $article.height() - $(window).height();
@@ -103,11 +103,11 @@ $(document).ready(function(){
   // Waypoints
 
   // Changes header styles when over main art vs article body
-  $('#js-article').waypoint(function() {
+  $('#js-article-body').waypoint(function() {
     $($header).toggleClass('is-top');
     $('#js-site-title').toggleClass('is-hidden');
     }, {
-      offset: '0'
+      offset: '27px'
     });
 
   // Fades in from the left hanging elements as they enter viewport
@@ -118,11 +118,16 @@ $(document).ready(function(){
     offset: 'bottom-in-view'
   });
 
-  // Fades in from the left hanging elements as they enter viewport
-  //$('#js-site-title').waypoint(function() {
-  //  $(this.element).toggleClass($(this.element).data('animated'));
-  //}, {
-  //  offset: 'bottom-in-view'
-  //});
+  // Parallax
+  if (!Modernizr.touch) { 
+    
+    $(window).scroll(function() {
+      var $windowScroll = $(this).scrollTop();
+      
+       $('#js-article-intro').css({
+          'transform': 'translateY('+$windowScroll / 4+'%)'
+        }); 
+    });
+  }
 
 });
