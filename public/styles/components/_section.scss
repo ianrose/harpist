@@ -1,0 +1,21 @@
+.section.is-first {
+  position: relative;
+}
+
+// Adds peek above the first section
+.section.is-first:before {
+  content: '';
+  max-width: $full-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-pad;
+  padding-right: $grid-pad;
+  background-color: $background-color;
+  display: block;
+  height: $grid-pad;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $grid-pad * -1;
+  width: 100%;
+}
