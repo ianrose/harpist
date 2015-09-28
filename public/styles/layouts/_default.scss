@@ -77,8 +77,11 @@
   margin: 0 auto;
 }
 
-.layout--hang figure {
-  max-width: $full-width / 2;
+.layout--hang {
+  figure,
+  aside {
+    max-width: $full-width / 2;
+  }
 }
 
 .layout--hang {
