@@ -11,6 +11,7 @@ body {
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
   background-color: $background-color;
+  overflow-x: hidden;
 }
 
 .wf-loading {
