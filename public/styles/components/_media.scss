@@ -10,10 +10,13 @@
 .media--bg {
   height: 100vh;
   left: 50%;
-  position: fixed;
+  position: absolute;
   top: 0;
   transform: translateX(-50%);
-  z-index: 0;
+
+  &.is-fixed {
+    position: fixed;
+  }
 }
 
 .media--video-embed {
