@@ -1,15 +1,15 @@
 .slick-arrow {
-  display: block;
-  height: $grid-pad;
-  position: absolute;
-  margin-top: ($grid-pad / 2) * -1;
-  top: 50%;
-  z-index: 1;
-  line-height: 0;
-  font-size: 0;
   background: transparent;
   border: none;
+  display: block;
+  font-size: 0;
+  height: $grid-pad;
+  line-height: 0;
+  margin-top: ($grid-pad / 2) * -1;
   outline: none;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
 
   &:before {
     font-size: $base-font-size;
@@ -56,29 +56,29 @@
 }
 
 .slick-dots button {
-  border: 0;
   background: transparent;
-  display: block;
-  height: $grid-pad;
-  width: $grid-pad;
-  outline: none;
-  line-height: 0;
-  font-size: 0;
+  border: 0;
   color: transparent;
-  padding: 5px;
   cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: $grid-pad;
+  line-height: 0;
+  outline: none;
+  padding: 5px;
   position: absolute;
+  width: $grid-pad;
 
   &:before {
+    color: $light-grey;
     content: "•";
     font-size: $base-font-size;
-    line-height: $grid-pad;
-    width: $grid-pad;
     height: $grid-pad;
-    color: $light-grey;
+    left: 0;
+    line-height: $grid-pad;
     position: absolute;
     top: 0;
-    left: 0;
+    width: $grid-pad;
   }
 }
 
