@@ -19,6 +19,11 @@ function debounce(func, wait, immediate) {
 
 $(document).ready(function(){
 
+  var $article = $('#js-article');
+  var $articleHeaderHeight = $('#js-article-header').outerHeight();
+  var $progress = $('#js-progress');
+  var $siteHeader = $('#js-site-header');
+
   // Scroll to Top
   $('.js-top').click(function(e) {
     e.preventDefault();
@@ -35,8 +40,7 @@ $(document).ready(function(){
   var didScroll;
   var lastScrollTop = 0;
   var delta = 5;
-  var $header = $('.js-header');
-  var headerHeight = $header.outerHeight();
+  var headerHeight = $siteHeader.outerHeight();
 
   $(window).scroll(function(e) {
     didScroll = true;
@@ -57,23 +61,21 @@ $(document).ready(function(){
     }
 
     if(start > lastScrollTop && start > headerHeight) {
-      $header.removeClass('is-down').addClass('is-up');
+      $siteHeader.removeClass('is-down').addClass('is-up');
     } else {
       if (start + $(window).height() < $(document).height()) {
-        $header.removeClass('is-up').addClass('is-down');
+        $siteHeader.removeClass('is-up').addClass('is-down');
       }
     }
     lastScrollTop = start;
   }
 
   // Progress
-  var $article = $('#js-article');
 
   var getMax = function(){
     return $article.height() - $(window).height();
   };
 
-  var $progress = $('.progress');
   var max = getMax();
   var value;
   var width;
@@ -104,8 +106,9 @@ $(document).ready(function(){
 
   // Changes header styles when over main art vs article body
   $('#js-article-body').waypoint(function() {
-    $($header).toggleClass('is-top');
+    $($siteHeader).toggleClass('is-top');
     $('#js-site-title').toggleClass('is-hidden');
+    $('#js-article-header-bg').toggleClass('is-fixed');
     }, {
       offset: '27px'
     });
@@ -119,17 +122,25 @@ $(document).ready(function(){
   });
 
   // Parallax
-  if (!Modernizr.touch) { 
-    
+  if (!Modernizr.touch) {
+    var getHeaderHeightDebounced = debounce(function() {
+      $articleHeaderHeight = $('#js-article-header').height();
+      return $articleHeaderHeight;
+    }, 100);
+
+    $(window).on('resize', getHeaderHeightDebounced);
+
     $(window).scroll(function() {
       var $windowScroll = $(this).scrollTop();
-      
-       $('#js-article-intro').css({
+      if ($windowScroll <= $articleHeaderHeight) {
+        $('#js-article-intro').css({
           'transform': 'translateY('+$windowScroll / 4+'%)'
-        }); 
+        });
+      }
     });
   }
 
+  // Charts
   var data = {
     // A labels array that can contain any sort of values
     labels: ['1985', '1990', '1995', '2000', '2010'],
@@ -168,9 +179,9 @@ $(document).ready(function(){
     }
   };
 
-// Create a new line chart object where as first parameter we pass in a selector
-// that is resolving to our chart container element. The Second parameter
-// is the actual data object.
+  // Create a new line chart object where as first parameter we pass in a selector
+  // that is resolving to our chart container element. The Second parameter
+  // is the actual data object.
   new Chartist.Line('.ct-chart', data, options);
 
   var $chart = $('.ct-chart');
