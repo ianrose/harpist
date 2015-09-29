@@ -1,9 +1,9 @@
 .site-header {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
   color: $background-color;
-  padding: $base-vertical-unit $grid-pad;
   height: $site-header-height;
   left: 0;
+  padding: $base-vertical-unit $grid-pad;
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
@@ -21,10 +21,10 @@
 }
 
 .site-header.is-top {
-  background-image: none;
   background-color: #fff;
-  color: $text-color;
+  background-image: none;
   box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
+  color: $text-color;
 
   a {
     color: $text-color;

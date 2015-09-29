@@ -1,13 +1,13 @@
 .chart {
   font-family: $font-sans;
-  margin-top: emRhythm($base-line-multi * 2);
   margin-bottom: emRhythm($base-line-multi * 2);
+  margin-top: emRhythm($base-line-multi * 2);
 }
 
 .chart--tooltip {
-  position: absolute;
   background-color: $background-color;
   padding: 3px;
+  position: absolute;
   text-align: center;
   z-index: 1;
   @include setType(2, $ms-down1);

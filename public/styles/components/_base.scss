@@ -3,15 +3,15 @@
 }
 
 body {
-  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
   font-family: $font-serif;
   font-weight: 400;
-  color: $text-color;
   margin: auto;
+  overflow-x: hidden;
+  padding: 0;
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
-  background-color: $background-color;
-  overflow-x: hidden;
 }
 
 .wf-loading {
@@ -33,16 +33,16 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
   font-family: $font-headline;
   font-weight: 700;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
   text-rendering: optimizeLegibility;
 
   a:link {
-    text-decoration: none;
     font-weight: 700;
+    text-decoration: none;
   }
 }
 
@@ -106,10 +106,10 @@ a:active {
 }
 
 p {
-  margin-top: 0;
   margin-bottom: emRhythm($base-line-multi);
-  padding-top: 0;
+  margin-top: 0;
   padding-bottom: 0;
+  padding-top: 0;
 
   @media (min-width: $screen-sm-min) {
     @if $paragraph-justify {
@@ -145,12 +145,12 @@ figcaption {
 }
 
 blockquote {
-  margin-left: 0;
-  padding-bottom: 0;
-  margin-top: emRhythm($base-line-multi * 2);
-  margin-bottom: emRhythm($base-line-multi * 2);
-  margin-right: 0;
   font-family: $font-display-serif;
+  margin-bottom: emRhythm($base-line-multi * 2);
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: emRhythm($base-line-multi * 2);
+  padding-bottom: 0;
 
   p {
     font-weight: 600;
@@ -160,9 +160,9 @@ blockquote {
 
   cite {
     color: $light-grey;
-    font-weight: 400;
     font-family: $font-sans;
     font-style: normal;
+    font-weight: 400;
     margin-top: emRhythm(1, $ms-down1);
     @include setType(2, $ms-down1);
   }
@@ -170,23 +170,23 @@ blockquote {
 
 pre,
 code {
+  background-color: lighten($text-color, 75%);
   font-family: $font-mono;
   font-size: $ms-down1;
-  background-color: lighten($text-color, 75%);
+  margin: 0;
   padding-left: 0.25em;
   padding-right: 0.25em;
-  margin: 0;
 }
 
 ol,
 ul,
 dl {
-  margin-top: 0;
   margin-bottom: emRhythm(3);
   margin-left: 0;
-  padding-top: 0;
+  margin-top: 0;
   padding-bottom: 0;
   padding-left: emRhythm(6);
+  padding-top: 0;
 }
 
 ul ul,
@@ -222,21 +222,21 @@ mark {
 // Creates horizontal rules that obey the baseline.
 // [1] Zero outs the user agent border
 hr {
-  margin-top: emRhythm(4);
-  margin-bottom: 0;
-  border: none; // [1]
+  border: none;
   border-top-color: $lighter-grey;
-  border-top-style: solid;
+  border-top-style: solid; // [1]
+  margin-bottom: 0;
+  margin-top: emRhythm(4);
   @include rhythmBorderTop(1px, 3);
 }
 
 table {
-  font-size: 80%;
   font-family: $font-sans;
-  width: 100%;
-  overflow: scroll;
-  max-width: 100%;
+  font-size: 80%;
   margin-bottom: emRhythm(3);
+  max-width: 100%;
+  overflow: scroll;
+  width: 100%;
 
   @media (min-width: $screen-sm-min) {
     font-size: 100%;
@@ -244,15 +244,15 @@ table {
 }
 
 table + figcaption {
-  margin-top: emRhythm(-2, $ms-down1);
   margin-bottom: emRhythm(3, $ms-down1);
+  margin-top: emRhythm(-2, $ms-down1);
 }
 
 th,
 td {
+  border-bottom: 1px solid $lighter-grey;
   padding: $base-vertical-unit $base-vertical-unit;
   text-align: left;
-  border-bottom: 1px solid $lighter-grey;
 }
 
 th:first-child,
@@ -284,14 +284,14 @@ input[type="datetime"],
 input[type="datetime-local"],
 textarea,
 select {
-  height: $base-vertical-unit * 4;
-  padding: 6px $base-vertical-unit; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 1px solid lighten($text-color, 60%);
+  border: 1px solid lighten($text-color, 60%); /* The 6px vertically centers text on FF, ignored by Webkit */
   box-shadow: none;
   box-sizing: border-box;
   font-family: $font-sans;
   font-weight: 400;
+  height: $base-vertical-unit * 4;
+  padding: 6px $base-vertical-unit;
   vertical-align: middle;
 }
 
@@ -311,8 +311,8 @@ textarea {
 
 textarea {
   min-height: $base-vertical-unit * 9;
-  padding-top: $base-vertical-unit;
   padding-bottom: $base-vertical-unit;
+  padding-top: $base-vertical-unit;
 }
 
 input[type="email"]:focus,
@@ -338,15 +338,15 @@ label,
 legend {
   color: $light-grey;
   display: block;
-  font-weight: 400;
   font-family: $font-serif;
+  font-weight: 400;
   margin-bottom: emRhythm(1, $ms-down1);
   @include setType($base-line-multi, $ms-down1);
 }
 
 fieldset {
-  padding: 0;
   border-width: 0;
+  padding: 0;
 }
 
 input[type="checkbox"],
