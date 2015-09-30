@@ -22,6 +22,7 @@
 .media--video-embed {
   @extend .ratio-16x9;
   @extend .intrinsic-wrapper;
+  width: 100%;
 
   iframe {
     @extend .intrinsic-wrapper-element;
