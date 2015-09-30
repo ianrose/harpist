@@ -7,7 +7,7 @@
     "modernizr": "~2.8.3",
     "slick-carousel": "~1.5.8",
     "typesettings": "~2.4.0",
-    "video.js": "~4.12.15",
+    "video.js": "~5.0.0",
     "waypoints": "~4.0.0",
     "matchMedia": "~0.2.0"
   }
