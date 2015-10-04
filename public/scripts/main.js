@@ -1,28 +1,48 @@
+/* globals Chartist, Modernizr */
+
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
 function debounce(func, wait, immediate) {
+  'use strict';
+
   var timeout;
   return function() {
     var context = this, args = arguments;
     var later = function() {
       timeout = null;
-      if (!immediate) func.apply(context, args);
+      if(!immediate) {
+        func.apply(context, args);
+      }
     };
     var callNow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
+    if(callNow) {
+      func.apply(context, args);
+    }
   };
 }
 
 $(document).ready(function(){
+  'use strict';
 
   var $article = $('#js-article');
   var $articleHeaderHeight = $('#js-article-header').outerHeight();
   var $progress = $('#js-progress');
   var $siteHeader = $('#js-site-header');
+
+  // Pauses other video/audio
+  $('audio, video').bind('play', function() {
+    var activated = this;
+
+    $('audio, video').each(function() {
+      if(this !== activated) {
+        this.pause();
+      }
+    });
+  });
 
   // Scroll to Top
   $('.js-top').click(function(e) {
@@ -42,7 +62,7 @@ $(document).ready(function(){
   var delta = 5;
   var headerHeight = $siteHeader.outerHeight();
 
-  $(window).scroll(function(e) {
+  $(window).scroll(function() {
     didScroll = true;
   });
 
@@ -54,7 +74,7 @@ $(document).ready(function(){
   }, 250);
 
   function hasScrolled() {
-    var start = $(this).scrollTop();
+    var start = $(window).scrollTop();
 
     if(Math.abs(lastScrollTop - start) <= delta) {
       return;
@@ -71,7 +91,6 @@ $(document).ready(function(){
   }
 
   // Progress
-
   var getMax = function(){
     return $article.height() - $(window).height();
   };
@@ -122,7 +141,7 @@ $(document).ready(function(){
   });
 
   // Parallax
-  if (!Modernizr.touch) {
+  if (!Modernizr.touch && Modernizr.csstransitions) {
     var getHeaderHeightDebounced = debounce(function() {
       $articleHeaderHeight = $('#js-article-header').height();
       return $articleHeaderHeight;
