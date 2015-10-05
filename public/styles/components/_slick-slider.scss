@@ -1,3 +1,12 @@
+.slick-slider {
+
+  .layout--bleed &,
+  .layout--full & {
+    margin-bottom: emRhythm($base-line-multi * 2);
+    margin-top: emRhythm($base-line-multi * 2);
+ }
+}
+
 .slick-arrow {
   background: transparent;
   border: none;

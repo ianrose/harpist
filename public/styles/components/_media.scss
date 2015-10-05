@@ -1,5 +1,11 @@
 .media {
-  margin-bottom: emRhythm(6);
+  margin-bottom: emRhythm($base-line-multi);
+
+  .layout--bleed &,
+  .layout--full & {
+    margin-top: emRhythm($base-line-multi * 2);
+    margin-bottom: emRhythm($base-line-multi * 2);
+  }
 }
 
 .media img {
