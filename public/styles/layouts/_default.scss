@@ -3,6 +3,11 @@
   margin-right: auto;
   max-width: $full-width;
 
+  .media,
+  .chart {
+    margin-top: emRhythm($base-line-multi * 2);
+  }
+
   table + figcaption {
     padding-left: 0;
     padding-right: 0;
@@ -58,6 +63,11 @@
   img {
     max-width: none;
     width: 100%;
+  }
+
+  .media,
+  .chart {
+    margin-top: emRhythm($base-line-multi * 2);
   }
 
   figcaption {

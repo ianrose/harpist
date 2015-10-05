@@ -67,24 +67,24 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  margin-bottom: emRhythm(0.5, $ms-up2, $silent: true);
-  @include setType(4, $ms-up2);
+  margin-bottom: emRhythm(0.5, $ms-up1, $silent: true);
+  @include setType(4, $ms-up1);
 }
 
 h3, .h3 {
-  margin-bottom: emRhythm(1, $ms-up1);
-  @include setType(3, $ms-up1);
+  margin-bottom: emRhythm(1);
+  @include setType(3);
 }
 
 h4, .h4 {
-  margin-bottom: emRhythm(0.5, $ms-up1, $silent: true);
-  @include setType(3, $ms-up1);
+  margin-bottom: emRhythm(0.5, $ms-down1, $silent: true);
+  @include setType(3, $ms-down1);
 }
 
 h5, .h5,
 h6, .h6 {
   margin-bottom: 0;
-  @include setType(3);
+  @include setType(3, $ms-down2);
 }
 
 a,
@@ -233,7 +233,8 @@ hr {
 table {
   font-family: $font-sans;
   font-size: 80%;
-  margin-bottom: emRhythm(3);
+  margin-bottom: emRhythm($base-line-multi * 2);
+  margin-top: emRhythm($base-line-multi * 2);
   max-width: 100%;
   overflow: scroll;
   width: 100%;
@@ -244,8 +245,8 @@ table {
 }
 
 table + figcaption {
-  margin-bottom: emRhythm(3, $ms-down1);
-  margin-top: emRhythm(-2, $ms-down1);
+  margin-bottom: emRhythm(6, $ms-down1);
+  margin-top: emRhythm(-5, $ms-down1);
 }
 
 th,
