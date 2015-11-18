@@ -32,7 +32,7 @@ gulp.task('compile', function (done) {
 
 gulp.task('watch', function () {
     gulp.watch('public/**/*.js', ['jshint']);
-    gulp.watch('public/**/*.{js,jade,styl,haml,sass,scss,less,ejs,css,html}', browserSync.reload);
+    gulp.watch('public/**/*.{js,jade,styl,haml,sass,scss,less,ejs,css,html,md}', browserSync.reload);
 });
 
 gulp.task('scripts', function() {
