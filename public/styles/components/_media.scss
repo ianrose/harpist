@@ -30,7 +30,12 @@
   @extend .intrinsic-wrapper;
   width: 100%;
 
-  iframe {
+  iframe,
+  video {
     @extend .intrinsic-wrapper-element;
+  }
+
+  &.vjs-fullscreen {
+    padding: 0;
   }
 }
