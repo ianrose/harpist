@@ -1,21 +1,19 @@
 var gulp         = require('gulp');
 var browserSync  = require('browser-sync');
 var cp           = require('child_process');
-var harp         = require('harp');
 var jshint       = require('gulp-jshint');
 var uglify       = require('gulp-uglify');
 var gulpSequence = require('gulp-sequence');
 var imagemin     = require('gulp-imagemin');
 
 gulp.task('serve', function () {
-  harp.server('.', {
-    port: 9000
-  });
+  cp.exec('harp server --port 9000', {stdio: 'inherit'})
 });
 
 gulp.task('browser-sync', function() {
   browserSync({
-    proxy: "localhost:9000"
+    proxy: "localhost:9000",
+    open: false
   });
 });
 
@@ -32,7 +30,7 @@ gulp.task('compile', function (done) {
 
 gulp.task('watch', function () {
     gulp.watch('public/**/*.js', ['jshint']);
-    gulp.watch('public/**/*.{js,jade,styl,haml,sass,scss,less,ejs,css,html,md}', browserSync.reload);
+    gulp.watch('public/**/*.{js,jade,styl,haml,sass,scss,less,ejs,css,html,md,json}', browserSync.reload);
 });
 
 gulp.task('scripts', function() {
