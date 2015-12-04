@@ -5,3 +5,4 @@ www
 .idea
 .idea/workspace.xml
 .DS_store
+bower_components

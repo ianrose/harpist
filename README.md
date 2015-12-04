@@ -23,9 +23,10 @@ B. Install Gulp and Harp.js globally
 ```
 $ npm install -g harp
 $ npm install -g gulp
+$ npm install -g bower-installer
 ```
 
-C. At your project run `npm install` then `bower install`
+C. At your project run `npm install` then `bower-installer`
 
 ## How to use
 
