@@ -10,7 +10,6 @@ A [Gulp](https://github.com/gulpjs/gulp) and [Harp](https://github.com/sintaxi/h
 - [jQuery](https://github.com/jquery/jquery)
 - [Typesettings](https://github.com/ianrose/typesettings)
 - [Video.js](https://github.com/videojs/video.js)
-- [Chartist.js](https://github.com/gionkunz/chartist-js)
 
 ## How to Setup
 

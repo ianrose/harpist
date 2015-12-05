@@ -2,13 +2,11 @@
   "name": "storysettings",
   "private": true,
   "dependencies": {
-    "chartist": "~0.9.4",
     "modernizr": "~2.8.3",
     "slick-carousel": "~1.5.8",
     "typesettings": "~2.4.0",
     "video.js": "~5.2.4",
     "waypoints": "~4.0.0",
-    "matchMedia": "~0.2.0",
     "lazysizes": "~1.3.1",
     "videojs-youtube": "~2.0.3",
     "jquery": "~2.1.4"
