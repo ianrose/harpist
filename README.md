@@ -17,10 +17,9 @@ A. Get a copy of Storysettings for your project.
 
 `git clone https://github.com/ianrose/storysettings.git`
 
-B. Install Gulp and Harp.js globally
+B. Install Gulp and bower-installer globally
 
 ```
-$ npm install -g harp
 $ npm install -g gulp
 $ npm install -g bower-installer
 ```
