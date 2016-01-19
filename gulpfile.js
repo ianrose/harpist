@@ -49,10 +49,11 @@ gulp.task('scripts', function() {
 gulp.task('images', function() {
   return gulp.src('./public/images/*', {base: './public'})
     .pipe(imagemin({
+      optimizationLevel: 3,
       progressive: true,
       svgoPlugins: [{removeViewBox: false}]
     }))
-    .pipe(gulp.dest('www/images'));
+    .pipe(gulp.dest('www/'));
 });
 
 gulp.task('default', ['serve', 'browser-sync', 'watch']);
