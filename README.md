@@ -24,7 +24,7 @@ $ npm install -g gulp
 $ npm install -g bower-installer
 ```
 
-C. At your project run `npm install` then `bower-installer`
+C. At your project run `npm install`
 
 ## How to use
 

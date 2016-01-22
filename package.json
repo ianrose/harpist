@@ -15,5 +15,8 @@
     "gulp-sequence": "^0.4.1",
     "gulp-uglify": "^1.4.0",
     "harp": "^0.20.1"
+  },
+  "scripts": {
+    "postinstall": "bower-installer"
   }
 }
