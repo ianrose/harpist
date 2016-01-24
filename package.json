@@ -1,7 +1,7 @@
 {
   "name": "Storysettings",
   "version": "0.1.0",
-  "description": "Harp.js and Gulp",
+  "description": "Longform Boilerplate using Harp.js",
   "private": true,
   "main": "public/index.ejs",
   "author": "Ian Rose",
@@ -9,14 +9,18 @@
   "devDependencies": {
     "bower-installer": "^1.2.0",
     "browser-sync": "^2.9.8",
-    "gulp": "^3.9.0",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-sequence": "^0.4.1",
-    "gulp-uglify": "^1.4.0",
-    "harp": "^0.20.1"
+    "harp": "^0.20.1",
+    "imageoptim-cli": "^1.11.6",
+    "jshint": "^2.9.1",
+    "recursive-uglifyjs": "^1.0.0"
   },
   "scripts": {
-    "postinstall": "bower-installer"
+    "postinstall": "bower-installer",
+    "test": "jshint public/**/*.js",
+    "dev": "harp server & browser-sync start --no-open --proxy 'localhost:9000' --files './public/**/*.ejs, public/**/*.jade, ./public/**/*.ejs, public/**/*.md, ./public/**/*.scss, public/**/*.sass, ./public/**/*.less, ./public/**/*.css, ./public/**/_data.json'",
+    "optimize-img": "imageoptim --directory ./public/",
+    "uglify": "recursive-uglifyjs ./www/",
+    "compile": "harp compile && npm test",
+    "postcompile": "npm run uglify"
   }
 }
