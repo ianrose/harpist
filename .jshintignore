@@ -1,1 +1,1 @@
-public/vendor
+public/vendor/**/*.js
