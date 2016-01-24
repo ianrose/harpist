@@ -13,24 +13,21 @@ A [Gulp](https://github.com/gulpjs/gulp) and [Harp](https://github.com/sintaxi/h
 
 ## How to Setup
 
-A. Get a copy of Storysettings for your project.
+Get a copy of Storysettings for your project.
 
 `git clone https://github.com/ianrose/storysettings.git`
 
-B. Install Gulp and bower-installer globally
+Install dependencies:
 
 ```
-$ npm install -g gulp
-$ npm install -g bower-installer
+$ npm install
 ```
-
-C. At your project run `npm install`
 
 ## How to use
 
-To develop with Storysettings: `gulp`
+To develop with Storysettings: `npm run dev`
 
-To generate with Storysettings: `gulp build`
+To generate with Storysettings: `npm run compile`
 
 After Storysettings is running be sure to update `harp.json` with your project specifics.
 
