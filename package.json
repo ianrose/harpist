@@ -10,7 +10,7 @@
     "bower-installer": "^1.2.0",
     "browser-sync": "^2.9.8",
     "harp": "^0.20.1",
-    "imageoptim-cli": "^1.11.6",
+    "imagemin-cli": "^2.1.0",
     "jshint": "^2.9.1",
     "recursive-uglifyjs": "^1.0.0"
   },
@@ -18,9 +18,9 @@
     "postinstall": "bower-installer",
     "test": "jshint public/**/*.js",
     "dev": "harp server & browser-sync start --no-open --proxy 'localhost:9000' --files './public/**/*.ejs, public/**/*.jade, ./public/**/*.ejs, public/**/*.md, ./public/**/*.scss, public/**/*.sass, ./public/**/*.less, ./public/**/*.css, ./public/**/_data.json'",
-    "optimize-img": "imageoptim --directory ./public/",
     "uglify": "recursive-uglifyjs ./www/",
     "compile": "harp compile && npm test",
-    "postcompile": "npm run uglify"
+    "postcompile": "npm run uglify && npm run imagemin",
+    "imagemin": "imagemin ./public/images/ ./www/images/ --optimizationLevel 3 --progressive"
   }
 }
