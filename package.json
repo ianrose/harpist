@@ -22,5 +22,9 @@
     "compile": "harp compile && npm test",
     "postcompile": "npm run uglify && npm run imagemin",
     "imagemin": "imagemin ./public/images/ ./www/images/ --optimizationLevel 3 --progressive"
+  },
+  "engines": {
+    "node": "5.5.x",
+    "npm": "3.3.x"
   }
 }
