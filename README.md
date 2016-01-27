@@ -1,11 +1,11 @@
 # Storysettings (In Development)
 
-A [Gulp](https://github.com/gulpjs/gulp) and [Harp](https://github.com/sintaxi/harp) static site generator with:
+[Harp](https://github.com/sintaxi/harp) static site generator with:
 
 - [Browsersync](https://github.com/BrowserSync/browser-sync)
-- [Imagemin](https://github.com/sindresorhus/gulp-imagemin)
-- [JSHint](https://github.com/spalger/gulp-jshint)
-- [JS Minification](https://github.com/terinjokes/gulp-uglify)
+- [Imagemin](https://github.com/imagemin/imagemin-cli)
+- [JSHint](https://github.com/jshint/jshint)
+- [JS Minification](https://github.com/digitaledgeit/npm-recursive-uglifyjs)
 - [Mondernizr](https://github.com/Modernizr/Modernizr)
 - [jQuery](https://github.com/jquery/jquery)
 - [Typesettings](https://github.com/ianrose/typesettings)
@@ -13,24 +13,21 @@ A [Gulp](https://github.com/gulpjs/gulp) and [Harp](https://github.com/sintaxi/h
 
 ## How to Setup
 
-A. Get a copy of Storysettings for your project.
+Get a copy of Storysettings for your project.
 
 `git clone https://github.com/ianrose/storysettings.git`
 
-B. Install Gulp and bower-installer globally
+Install dependencies:
 
 ```
-$ npm install -g gulp
-$ npm install -g bower-installer
+$ npm install
 ```
-
-C. At your project run `npm install`
 
 ## How to use
 
-To develop with Storysettings: `gulp`
+To develop with Storysettings: `$ npm run dev`
 
-To generate with Storysettings: `gulp build`
+To generate with Storysettings: `$ npm run compile`
 
 After Storysettings is running be sure to update `harp.json` with your project specifics.
 

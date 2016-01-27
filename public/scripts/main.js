@@ -66,13 +66,6 @@ $(document).ready(function(){
     didScroll = true;
   });
 
-  setInterval(function() {
-    if(didScroll) {
-      hasScrolled();
-      didScroll = false;
-    }
-  }, 250);
-
   function hasScrolled() {
     var start = $(window).scrollTop();
 
@@ -89,6 +82,13 @@ $(document).ready(function(){
     }
     lastScrollTop = start;
   }
+
+  setInterval(function() {
+    if(didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
 
   // Progress
   var getMax = function(){
