@@ -17,7 +17,7 @@
   "scripts": {
     "postinstall": "bower-installer",
     "test": "jshint public/**/*.js",
-    "dev": "harp server & browser-sync start --no-open --proxy 'localhost:9000' --files './public/**/*.ejs, public/**/*.jade, ./public/**/*.ejs, public/**/*.md, ./public/**/*.scss, public/**/*.sass, ./public/**/*.less, ./public/**/*.css, ./public/**/_data.json'",
+    "dev": "harp server & browser-sync start --no-open --proxy 'localhost:9000' --files './public/**/*.ejs, public/**/*.jade, ./harp.json, public/**/*.md, ./public/**/*.scss, public/**/*.sass, ./public/**/*.less, ./public/**/*.css, ./public/**/_data.json'",
     "uglify": "recursive-uglifyjs ./www/",
     "compile": "harp compile && npm test",
     "postcompile": "npm run uglify && npm run imagemin",
