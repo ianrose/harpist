@@ -9,6 +9,7 @@
   "devDependencies": {
     "bower-installer": "^1.2.0",
     "browser-sync": "^2.9.8",
+    "csslint-cli": "0.0.3",
     "harp": "^0.20.1",
     "imagemin-cli": "^2.1.0",
     "jshint": "^2.9.1",
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "postinstall": "bower-installer",
-    "test": "jshint public/**/*.js",
+    "test": "jshint ./public/**/*.js & csslint-cli ./www/styles/",
     "dev": "harp server & browser-sync start --no-open --proxy 'localhost:9000' --files './public/**/*.ejs, public/**/*.jade, ./harp.json, public/**/*.md, ./public/**/*.scss, public/**/*.sass, ./public/**/*.less, ./public/**/*.css, ./public/**/_data.json'",
     "uglify": "recursive-uglifyjs ./www/",
     "compile": "harp compile && npm test",
