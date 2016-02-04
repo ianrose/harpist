@@ -6,12 +6,12 @@
   width: 18px;
 
   @media (min-width: $screen-sm-min) {
-        margin-right: $grid-pad;
+    margin-right: $grid-pad;
   }
 
- .is-top & {
-   @media (min-width: $screen-sm-min) {
-     display: block;
+  .is-top & {
+    @media (min-width: $screen-sm-min) {
+      display: block;
    }
  }
 }

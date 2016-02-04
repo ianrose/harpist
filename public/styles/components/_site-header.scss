@@ -1,5 +1,6 @@
 .site-header {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+  @include clearfix();
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   color: $background-color;
   height: $site-header-height;
   left: 0;
@@ -9,7 +10,6 @@
   transition: top 0.2s ease-in-out;
   width: 100%;
   z-index: 2;
-  @include clearfix();
 
   a {
     color: $background-color;
@@ -23,7 +23,7 @@
 .site-header.is-top {
   background-color: #fff;
   background-image: none;
-  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
   color: $text-color;
 
   a {

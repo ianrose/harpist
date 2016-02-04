@@ -13,7 +13,7 @@
   max-width: 100%;
 }
 
-.media--bg {
+.media__bg {
   height: 100vh;
   left: 50%;
   position: absolute;
@@ -25,14 +25,14 @@
   }
 }
 
-.media--video-embed {
+.media__video-embed {
   @extend .ratio-16x9;
   @extend .intrinsic-wrapper;
   width: 100%;
 
   iframe,
   video {
-    @extend .intrinsic-wrapper-element;
+    @extend .intrinsic-wrapper__element;
   }
 
   &.vjs-fullscreen {

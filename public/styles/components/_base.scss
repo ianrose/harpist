@@ -56,35 +56,41 @@ h6, .h6 {
 // first rule.
 // [5] Sets the type to one of the modular scale values and the second argument
 // sets a unitless line-height as a multiple of the vertical grid.
-h1, .h1 {
-  margin-bottom: emRhythm(0.5, $ms-up3, $silent: true); // [1]
+h1,
+.h1 {
   @include setType(4, $ms-up3); // [2]
+  margin-bottom: emRhythm(0.5, $ms-up3, $silent: true); // [1]
 
   @media (min-width: $screen-sm-min) {
-    margin-bottom: emRhythm(1, $ms-up5, $silent: true);
     @include setType(8, $ms-up5);
+    margin-bottom: emRhythm(1, $ms-up5, $silent: true);
   }
 }
 
-h2, .h2 {
-  margin-bottom: emRhythm(0.5, $ms-up1, $silent: true);
+h2,
+.h2 {
   @include setType(4, $ms-up1);
+  margin-bottom: emRhythm(0.5, $ms-up1, $silent: true);
 }
 
-h3, .h3 {
-  margin-bottom: emRhythm(1);
+h3,
+.h3 {
   @include setType(3);
+  margin-bottom: emRhythm(1);
 }
 
-h4, .h4 {
-  margin-bottom: emRhythm(0.5, $ms-down1, $silent: true);
+h4,
+.h4 {
   @include setType(3, $ms-down1);
+  margin-bottom: emRhythm(0.5, $ms-down1, $silent: true);
 }
 
-h5, .h5,
-h6, .h6 {
-  margin-bottom: 0;
+h5,
+.h5,
+h6,
+.h6 {
   @include setType(3, $ms-down2);
+  margin-bottom: 0;
 }
 
 a,
@@ -137,11 +143,11 @@ figure {
 }
 
 figcaption {
+  @include setType(2, $ms-down1, $ms-up1);
   color: $light-grey;
   font-family: $font-sans;
   font-weight: 400;
   margin-top: $base-vertical-unit;
-  @include setType(2, $ms-down1, $ms-up1);
 }
 
 blockquote {
@@ -153,18 +159,18 @@ blockquote {
   padding-bottom: 0;
 
   p {
+    @include setType(4, $ms-up2);
     font-weight: 600;
     margin-bottom: 0;
-    @include setType(4, $ms-up2);
   }
 
   cite {
+    @include setType(2, $ms-down1);
     color: $light-grey;
     font-family: $font-sans;
     font-style: normal;
     font-weight: 400;
     margin-top: emRhythm(1, $ms-down1);
-    @include setType(2, $ms-down1);
   }
 }
 
@@ -222,12 +228,12 @@ mark {
 // Creates horizontal rules that obey the baseline.
 // [1] Zero outs the user agent border
 hr {
-  border: none;
+  @include rhythmBorderTop(1px, 3);
+  border: 0;
   border-top-color: $lighter-grey;
   border-top-style: solid; // [1]
   margin-bottom: 0;
   margin-top: emRhythm(4);
-  @include rhythmBorderTop(1px, 3);
 }
 
 table {
@@ -252,7 +258,7 @@ table + figcaption {
 th,
 td {
   border-bottom: 1px solid $lighter-grey;
-  padding: $base-vertical-unit $base-vertical-unit;
+  padding: $base-vertical-unit;
   text-align: left;
 }
 
@@ -331,18 +337,18 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #33c3f0;
   outline: 0;
 }
 
 label,
 legend {
+  @include setType($base-line-multi, $ms-down1);
   color: $light-grey;
   display: block;
   font-family: $font-serif;
   font-weight: 400;
   margin-bottom: emRhythm(1, $ms-down1);
-  @include setType($base-line-multi, $ms-down1);
 }
 
 fieldset {

@@ -8,11 +8,11 @@
   }
 }
 
-.chart--tooltip {
+.chart__tooltip {
+  @include setType(2, $ms-down1);
   background-color: $background-color;
   padding: 3px;
   position: absolute;
   text-align: center;
   z-index: 1;
-  @include setType(2, $ms-down1);
 }

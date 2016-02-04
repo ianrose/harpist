@@ -1,5 +1,6 @@
-.article--body {
+.article__body {
   background-color: $background-color;
+
   p,
   h2,
   h3,
@@ -26,7 +27,7 @@
   }
 }
 
-.article--header {
+.article__header {
   background-color: #000;
   color: #fff;
   height: 100vh;
@@ -36,20 +37,20 @@
   z-index: -1;
 }
 
-.article--header h1 {
+.article__header h1 {
+  @include setType(4, $ms-up2);
   margin-left: auto;
   margin-right: auto;
   padding-left: $grid-pad;
   padding-right: $grid-pad;
-  @include setType(4, $ms-up2);
 
   @media (min-width: $screen-sm-min) {
-    margin-bottom: emRhythm(1, $ms-up5, $silent: true);
     @include setType(8, $ms-up5);
+    margin-bottom: emRhythm(1, $ms-up5, $silent: true);
   }
 }
 
-.article--intro {
+.article__intro {
   margin-top: -108px;
   padding-left: $grid-pad;
   padding-right: $grid-pad;

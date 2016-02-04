@@ -1,45 +1,45 @@
 // Configuration
-@import "config.scss";
+@import 'config';
 
 // Reset
-@import "components/normalize.scss";
+@import 'components/normalize';
 
 // Helper Mixins and Functions
-@import "helpers/mixins-functions.scss";
+@import 'helpers/mixins-functions';
 
 // Vendor
-@import "../vendor/typesettings/typesettings.scss";
-@import "../vendor/slick-carousel/slick.scss";
+@import '../vendor/typesettings/typesettings';
+@import '../vendor/slick-carousel/slick';
 
 // Components
-@import "components/article.scss";
-@import "components/animate.scss";
-@import "components/base.scss";
-@import "components/captions.scss";
-@import "components/chart.scss";
-@import "components/credits.scss";
-@import "components/byline.scss";
-@import "components/dek.scss";
-@import "components/dropcap.scss";
-@import "components/footnotes.scss";
-@import "components/lazysizes";
-@import "components/media.scss";
-@import "components/progress.scss";
-@import "components/pullquote.scss";
-@import "components/section.scss";
-@import "components/share.scss";
-@import "components/sidebar.scss";
-@import "components/site-header.scss";
-@import "components/site-logo.scss";
-@import "components/site-title.scss";
-@import "components/site-top.scss";
-@import "components/slick-slider.scss";
-@import "components/tombstone.scss";
-@import "components/video-default-js.scss";
-@import "components/video-js-youtube.scss";
+@import 'components/article';
+@import 'components/animate';
+@import 'components/base';
+@import 'components/captions';
+@import 'components/chart';
+@import 'components/credits';
+@import 'components/byline';
+@import 'components/dek';
+@import 'components/dropcap';
+@import 'components/footnotes';
+@import 'components/lazysizes';
+@import 'components/media';
+@import 'components/progress';
+@import 'components/pullquote';
+@import 'components/section';
+@import 'components/share';
+@import 'components/sidebar';
+@import 'components/site-header';
+@import 'components/site-logo';
+@import 'components/site-title';
+@import 'components/site-top';
+@import 'components/slick-slider';
+@import 'components/tombstone';
+@import 'components/video-default-js';
+@import 'components/video-js-youtube';
 
 // Layouts
-@import "layouts/default.scss";
+@import 'layouts/default';
 
 // Helper Classes
-@import "helpers/classes.scss";
+@import 'helpers/classes';

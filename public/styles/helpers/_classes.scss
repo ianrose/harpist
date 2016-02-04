@@ -19,7 +19,7 @@
 
 }
 
-.intrinsic-wrapper-element {
+.intrinsic-wrapper__element {
   /*
     This class needs no further customization,
     if this class is applied to the elemtent and is contained
@@ -36,7 +36,7 @@
 
 @include generateRatios(16, 9);
 
-.cssanimations [data-animated^="fadeIn"] {
+.cssanimations [data-animated^='fadeIn'] {
   opacity: 0;
 }
 
