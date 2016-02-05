@@ -9,7 +9,7 @@
 
 .slick-arrow {
   background: transparent;
-  border: none;
+  border: 0;
   display: block;
   font-size: 0;
   height: $grid-pad;
@@ -32,7 +32,7 @@
   right: $grid-pad;
 
   &:before {
-    content: "›";
+    content: '›';
   }
 }
 
@@ -40,7 +40,7 @@
   left: $grid-pad;
 
   &:before {
-    content: "‹";
+    content: '‹';
   }
 }
 
@@ -80,7 +80,7 @@
 
   &:before {
     color: $light-grey;
-    content: "•";
+    content: '•';
     font-size: $base-font-size;
     height: $grid-pad;
     left: 0;
@@ -92,5 +92,5 @@
 }
 
 .slick-active button:before {
- color: $text-color;
+  color: $text-color;
 }

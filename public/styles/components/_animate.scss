@@ -30,7 +30,7 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-.fadeInLeft {
+.fade--in-left {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
@@ -49,8 +49,7 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-.fadeInRight {
+.fade--in-right {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
-

@@ -5,7 +5,7 @@
   max-width: $full-width + ($grid-pad * 2);
 
   @media (min-width: $screen-sm-min) {
-    margin-bottom: emRhythm(1, $ms-up2);
     @include setType(4, $ms-up2);
+    margin-bottom: emRhythm(1, $ms-up2);
   }
 }
