@@ -238,16 +238,11 @@ hr {
 
 table {
   font-family: $font-sans;
-  font-size: 80%;
   margin-bottom: emRhythm($base-line-multi * 2);
   margin-top: emRhythm($base-line-multi * 2);
   max-width: 100%;
   overflow: scroll;
   width: 100%;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: 100%;
-  }
 }
 
 table + figcaption {
@@ -255,21 +250,46 @@ table + figcaption {
   margin-top: emRhythm(-5, $ms-down1);
 }
 
+tr {
+  display: block;
+  border-bottom: 2px solid $lighter-grey;
+
+  @media (min-width: $screen-sm-min) {
+    display: table-row;
+  }
+}
+
+th {
+  display: none;
+
+  @media (min-width: $screen-sm-min) {
+    display: table-cell;
+  }
+}
+
+td {
+  display: block;
+
+  &:before {
+    content: attr(data-th)': ';
+    font-weight: bold;
+    padding-right: $base-vertical-unit;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    display: table-cell;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
 th,
 td {
   border-bottom: 1px solid $lighter-grey;
   padding: $base-vertical-unit;
   text-align: left;
-}
-
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-
-th:last-child,
-td:last-child {
-  padding-right: 0;
 }
 
 form p {
