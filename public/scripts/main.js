@@ -1,5 +1,3 @@
-/* globals Modernizr */
-
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
@@ -29,7 +27,6 @@ $(document).ready(function(){
   'use strict';
 
   var $article = $('#js-article');
-  var $articleHeaderHeight = $('#js-article-header').outerHeight();
   var $progress = $('#js-progress');
   var $siteHeader = $('#js-site-header');
 
@@ -83,7 +80,7 @@ $(document).ready(function(){
     lastScrollTop = start;
   }
 
-  setInterval(function() {
+  setInterval(function() { 
     if(didScroll) {
       hasScrolled();
       didScroll = false;
@@ -139,23 +136,4 @@ $(document).ready(function(){
   }, {
     offset: 'bottom-in-view'
   });
-
-  // Parallax
-  if (!Modernizr.touch && Modernizr.csstransitions) {
-    var getHeaderHeightDebounced = debounce(function() {
-      $articleHeaderHeight = $('#js-article-header').height();
-      return $articleHeaderHeight;
-    }, 100);
-
-    $(window).on('resize', getHeaderHeightDebounced);
-
-    $(window).scroll(function() {
-      var $windowScroll = $(this).scrollTop();
-      if ($windowScroll <= $articleHeaderHeight) {
-        $('#js-article-intro').css({
-          'transform': 'translateY('+$windowScroll / 4+'%)'
-        });
-      }
-    });
-  }
 });
