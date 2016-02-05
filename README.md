@@ -6,7 +6,7 @@
 - [Imagemin](https://github.com/imagemin/imagemin-cli)
 - [JSHint](https://github.com/jshint/jshint)
 - [JS Minification](https://github.com/digitaledgeit/npm-recursive-uglifyjs)
-- [Mondernizr](https://github.com/Modernizr/Modernizr)
+- [Feature.js](https://github.com/viljamis/feature.js)
 - [jQuery](https://github.com/jquery/jquery)
 - [Typesettings](https://github.com/ianrose/typesettings)
 - [Video.js](https://github.com/videojs/video.js)
