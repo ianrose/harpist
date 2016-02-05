@@ -1,7 +1,7 @@
 .site-header {
   @include clearfix();
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
-  color: $background-color;
+  background-color: #fff;
+  color: $text-color;
   height: $site-header-height;
   left: 0;
   padding: $base-vertical-unit $grid-pad;
@@ -12,21 +12,6 @@
   z-index: 2;
 
   a {
-    color: $background-color;
-  }
-
-  svg {
-    fill: $background-color;
-  }
-}
-
-.site-header.is-top {
-  background-color: #fff;
-  background-image: none;
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
-  color: $text-color;
-
-  a {
     color: $text-color;
   }
 
@@ -35,6 +20,16 @@
   }
 }
 
+.site-header.is-top {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
 .site-header.is-up {
   top: $site-header-height * -1;
+}
+
+.site-header__content {
+  max-width: $full-width * 2;
+  margin-left: auto;
+  margin-right: auto;
 }
