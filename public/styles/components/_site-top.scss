@@ -2,11 +2,10 @@
   display: none;
   float: right;
   height: 18px;
-  margin-top: 3px;
   width: 18px;
 
   @media (min-width: $screen-sm-min) {
-    margin-right: $grid-pad;
+    margin-right: $column-pad;
   }
 
   .is-top & {

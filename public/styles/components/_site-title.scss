@@ -2,7 +2,8 @@
   display: none;
   float: left;
   font-family: $font-sans;
-  margin-right: $grid-pad;
+  line-height: 1.25;
+  margin-right: $column-pad;
 
   @media (min-width: $screen-sm-min) {
     display: block;

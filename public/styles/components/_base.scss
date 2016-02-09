@@ -6,7 +6,7 @@ body {
   background-color: $background-color;
   color: $text-color;
   font-family: $font-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: auto;
   overflow-x: hidden;
   padding: 0;
@@ -14,18 +14,18 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
-.wf-loading {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  blockquote {
-    visibility: hidden;
-  }
-}
+// .wf-loading {
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6,
+//   p,
+//   blockquote {
+//     visibility: hidden;
+//   }
+// }
 
 h1, .h1,
 h2, .h2,
@@ -34,14 +34,14 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-family: $font-headline;
-  font-weight: 700;
+  font-weight: 900;
   margin-top: 0;
   padding-bottom: 0;
   padding-top: 0;
   text-rendering: optimizeLegibility;
 
   a:link {
-    font-weight: 700;
+    font-weight: 900;
     text-decoration: none;
   }
 }
@@ -59,7 +59,7 @@ h6, .h6 {
 h1,
 .h1 {
   @include setType(4, $ms-up3); // [2]
-  margin-bottom: emRhythm(0.5, $ms-up3, $silent: true); // [1]
+  margin-bottom: emRhythm(1, $ms-up3, $silent: true); // [1]
 
   @media (min-width: $screen-sm-min) {
     @include setType(8, $ms-up5);
@@ -69,20 +69,20 @@ h1,
 
 h2,
 .h2 {
-  @include setType(4, $ms-up1);
-  margin-bottom: emRhythm(0.5, $ms-up1, $silent: true);
+  @include setType(4, $ms-up2);
+  margin-bottom: emRhythm(1, $ms-up2, $silent: true);
 }
 
 h3,
 .h3 {
-  @include setType(3);
+  @include setType(3, $ms-up1);
   margin-bottom: emRhythm(1);
 }
 
 h4,
 .h4 {
-  @include setType(3, $ms-down1);
-  margin-bottom: emRhythm(0.5, $ms-down1, $silent: true);
+  @include setType(3);
+  margin-bottom: emRhythm(1, $ms-up1, $silent: true);
 }
 
 h5,
@@ -95,16 +95,17 @@ h6,
 
 a,
 a:link {
-  color: #000;
-  font-weight: 600;
+  color: $link-color;
+  text-decoration: none;
 }
 
 a:visited {
-  color: $text-color;
+  color: $link-color;
 }
 
 a:hover {
   color: $link-color;
+  text-decoration: underline;
 }
 
 a:active {
@@ -143,7 +144,7 @@ figure {
 }
 
 figcaption {
-  @include setType(2, $ms-down1, $ms-up1);
+  @include setType(2, $ms-down1);
   color: $light-grey;
   font-family: $font-sans;
   font-weight: 400;
@@ -157,10 +158,11 @@ blockquote {
   margin-right: 0;
   margin-top: emRhythm($base-line-multi * 2);
   padding-bottom: 0;
+  text-align: center;
 
   p {
     @include setType(4, $ms-up2);
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 0;
   }
 
@@ -170,6 +172,8 @@ blockquote {
     font-family: $font-sans;
     font-style: normal;
     font-weight: 400;
+    padding-left: $column-pad;
+    padding-right: $column-pad;
     margin-top: emRhythm(1, $ms-down1);
   }
 }

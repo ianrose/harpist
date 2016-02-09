@@ -1,10 +1,10 @@
 .site-header {
-  @include clearfix();
   background-color: #fff;
   color: $text-color;
   height: $site-header-height;
   left: 0;
-  padding: $base-vertical-unit $grid-pad;
+  padding-top: $base-vertical-unit + $bar-height;
+  padding-bottom: $base-vertical-unit;
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
@@ -29,7 +29,5 @@
 }
 
 .site-header__content {
-  max-width: $full-width * 2;
-  margin-left: auto;
-  margin-right: auto;
+  @include clearfix();
 }

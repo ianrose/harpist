@@ -27,7 +27,7 @@
     "service": {
       "analytics": "UA-XXXXXX-1",
       "service": "example",
-      "googlefonts": ["Lora:400,400italic,700:latin", "Work+Sans:400,600,800:latin"],
+      "googlefonts": ["Merriweather:300,300italic,700,700italic,900:latin", "Arimo:400,700"],
       "googleverification": null,
       "facebookid": null,
       "socialimage": "images/social-image.jpg",

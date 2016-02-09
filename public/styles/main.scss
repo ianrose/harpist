@@ -17,11 +17,13 @@
 @import 'components/base';
 @import 'components/captions';
 @import 'components/chart';
+@import 'components/col';
 @import 'components/credits';
 @import 'components/byline';
 @import 'components/dek';
 @import 'components/dropcap';
 @import 'components/footnotes';
+@import 'components/layout';
 @import 'components/lazysizes';
 @import 'components/media';
 @import 'components/progress';
@@ -39,7 +41,7 @@
 @import 'components/video-js-youtube';
 
 // Layouts
-@import 'layouts/default';
+// @import 'layouts/default';
 
 // Helper Classes
 @import 'helpers/classes';

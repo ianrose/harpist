@@ -2,7 +2,8 @@
   margin-bottom: emRhythm($base-line-multi);
 
   .layout--bleed &,
-  .layout--full & {
+  .layout--full &,
+  .layout--span & {
     margin-top: emRhythm($base-line-multi * 2);
     margin-bottom: emRhythm($base-line-multi * 2);
   }

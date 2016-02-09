@@ -72,8 +72,8 @@ $center-big-play-button: false; // true default
     margin-top: -($big-play-height / 2);
   } @else {
     // Align top left. 0.5em = 15px default
-    left: $grid-pad;
-    bottom: $grid-pad;
+    left: $column-pad;
+    bottom: $column-pad;
     top: auto;
   }
 }

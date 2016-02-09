@@ -36,7 +36,7 @@
 
 @include generateRatios(16, 9);
 
-.cssanimations [data-animated^='fade--in'] {
+.animated[data-animated^='fade'] {
   opacity: 0;
 }
 
