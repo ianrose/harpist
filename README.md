@@ -1,4 +1,4 @@
-# Storysettings (In Development)
+# Harpist (In Development)
 
 [Harp](https://github.com/sintaxi/harp) static site generator with:
 
@@ -13,9 +13,9 @@
 
 ## How to Setup
 
-Get a copy of Storysettings for your project.
+Get a copy of harpist for your project.
 
-`git clone https://github.com/ianrose/storysettings.git`
+`git clone https://github.com/ianrose/harpist.git`
 
 Install dependencies:
 
@@ -25,11 +25,11 @@ $ npm install
 
 ## How to use
 
-To develop with Storysettings: `$ npm run dev`
+To develop with harpist: `$ npm run dev`
 
-To generate with Storysettings: `$ npm run compile`
+To generate with harpist: `$ npm run compile`
 
-After Storysettings is running be sure to update `harp.json` with your project specifics.
+After Harpist is running be sure to update `harp.json` with your project specifics.
 
 ## Requirements
 
@@ -47,4 +47,4 @@ Node.js
 
 ## License
 
-[The MIT License (MIT)](https://github.com/ianrose/storysettings/blob/master/LICENSE)
+[The MIT License (MIT)](https://github.com/ianrose/harpist/blob/master/LICENSE)

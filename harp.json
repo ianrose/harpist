@@ -1,8 +1,8 @@
 {
   "globals": {
-    "name": "Storysettings",
+    "name": "Harpist",
     "title": "Bell Telephone Laboratories",
-    "url": "http://storysettings.surge.sh",
+    "url": "http://harpist.surge.sh",
     "description": "A research and scientific development company that belongs to Alcatel-Lucent.",
     "keywords": "Gulp, Harp, Longform",
     "domain": "surge.sh",
@@ -33,7 +33,7 @@
       "socialimage": "images/social-image.jpg",
       "appleid": null,
       "twitter": "thatianrose",
-      "disqus": "storysettings"
+      "disqus": "harpist"
     },
     "thanks": {
       "firstlast": {
