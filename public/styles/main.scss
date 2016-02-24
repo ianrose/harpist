@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: 'Merriweather';
   color: #252525;
+  text-align: center;
 }
 
 .site-header {
@@ -19,11 +20,23 @@ body {
   box-sizing: border-box;
 
   h1 {
-    font-weight: 900;
-    font-size: 4em;
+    font-weight: boldest;
+    // font-size: 10vw;
+    font-size: 10vmax;
     line-height: 1.5;
     font-style: italic;
     margin: 0;
+
+    a,
+    a:link {
+      color: #252525;
+      text-decoration: underline;
+    }
+
+    a:hover,
+    a:active {
+      color: #4575b4;
+    }
   }
 }
 

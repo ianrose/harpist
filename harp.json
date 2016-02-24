@@ -3,7 +3,7 @@
     "name": "Harpist",
     "title": "Harpist",
     "url": "http://harpist.surge.sh",
-    "description": "A Harp.js Boilerplate",
+    "description": "A Sass and EJS Harp.js Boilerplate",
     "keywords": "Gulp, Harp, Longform",
     "domain": "surge.sh",
     "authors": {
@@ -28,7 +28,6 @@
       "analytics": "UA-XXXXXX-1",
       "service": "example",
       "googlefonts": ["Merriweather:300,300italic,700,700italic,900:latin", "Arimo:400,700"],
-      "googlefonts": false,
       "googleverification": null,
       "facebookid": null,
       "socialimage": "images/social-image.jpg",
