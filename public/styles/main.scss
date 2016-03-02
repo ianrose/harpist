@@ -1,47 +1,56 @@
 // Configuration
 @import 'config';
 
-// Reset
-@import 'components/normalize';
+// Feel free to remove:
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Merriweather';
+  color: #252525;
+  text-align: center;
+}
 
-// Helper Mixins and Functions
-@import 'helpers/mixins-functions';
+.site-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 20px solid #fff;
+  box-sizing: border-box;
 
-// Vendor
-@import '../vendor/typesettings/typesettings';
-@import '../vendor/slick-carousel/slick';
+  h1 {
+    font-weight: boldest;
+    // font-size: 10vw;
+    font-size: 10vmax;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0;
 
-// Components
-@import 'components/article';
-@import 'components/animate';
-@import 'components/base';
-@import 'components/captions';
-@import 'components/chart';
-@import 'components/col';
-@import 'components/credits';
-@import 'components/byline';
-@import 'components/dek';
-@import 'components/dropcap';
-@import 'components/footnotes';
-@import 'components/layout';
-@import 'components/lazysizes';
-@import 'components/media';
-@import 'components/progress';
-@import 'components/pullquote';
-@import 'components/section';
-@import 'components/share';
-@import 'components/sidebar';
-@import 'components/site-header';
-@import 'components/site-logo';
-@import 'components/site-title';
-@import 'components/site-top';
-@import 'components/slick-slider';
-@import 'components/tombstone';
-@import 'components/video-default-js';
-@import 'components/video-js-youtube';
+    a,
+    a:link {
+      color: #252525;
+      text-decoration: underline;
+    }
 
-// Layouts
-// @import 'layouts/default';
+    a:hover,
+    a:active {
+      color: #4575b4;
+    }
+  }
+}
 
-// Helper Classes
-@import 'helpers/classes';
+a {
+  color: #4575b4;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}

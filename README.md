@@ -35,16 +35,6 @@ After Harpist is running be sure to update `harp.json` with your project specifi
 
 Node.js
 
-## Dev Resources
-
-- [HTML5 Video Converter](https://html5backgroundvideos.com/converter/)
-- [Hosting](http://surge.sh)
-
-## Thanks
-
- - [Juha Karttunen](https://gist.github.com/jkarttunen/a576e8dabe3a320e224b)
- - [Charlie Gleason](https://github.com/superhighfives/harp-gulp-browsersync-boilerplate)
-
 ## License
 
 [The MIT License (MIT)](https://github.com/ianrose/harpist/blob/master/LICENSE)

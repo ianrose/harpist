@@ -1,9 +1,9 @@
 {
   "globals": {
     "name": "Harpist",
-    "title": "Bell Telephone Laboratories",
+    "title": "Harpist",
     "url": "http://harpist.surge.sh",
-    "description": "A research and scientific development company that belongs to Alcatel-Lucent.",
+    "description": "A Sass and EJS Harp.js Boilerplate",
     "keywords": "Gulp, Harp, Longform",
     "domain": "surge.sh",
     "authors": {
@@ -33,7 +33,7 @@
       "socialimage": "images/social-image.jpg",
       "appleid": null,
       "twitter": "thatianrose",
-      "disqus": "harpist"
+      "disqus": false
     },
     "thanks": {
       "firstlast": {
