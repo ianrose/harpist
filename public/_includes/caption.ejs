@@ -1,5 +1,5 @@
 <figcaption>
-  <% if(body[i].value.caption || body[i].value.credit) { %><%- body[i].value.caption %><%- body[i].value.credit %><% } %>
-  <% if(body[i].value.caption && body[i].value.source) { %> | <% } %>
-  <% if(body[i].value.source) { %><%- body[i].value.source %><% } %>
+  <%_ if(body[i].value.caption || body[i].value.credit) { %><%- body[i].value.caption _%><%- body[i].value.credit -%><% } -%>
+  <% if(body[i].value.caption && body[i].value.source) { -%> | <% } -%>
+  <% if(body[i].value.source) { -%><%- body[i].value.source %><% } -%>
 </figcaption>

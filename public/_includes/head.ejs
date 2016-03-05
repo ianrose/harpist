@@ -1,7 +1,7 @@
   <head>
     <meta charset="utf-8">
-  <% var last = service.googlefonts[service.googlefonts.length -1] %>
-  <% if(service.googlefonts) { %>
+  <%_ var last = service.googlefonts[service.googlefonts.length -1] _%>
+  <%_ if(service.googlefonts) { _%>
     <!-- Fallback for Font family below in noscript [*] -->
     <script type="text/javascript">
       WebFontConfig = {
@@ -39,8 +39,8 @@
     <meta name="twitter:domain" content="<%= domain %>" />
     <% if(service.socialimage) { %><meta name="twitter:image:src" content="<%= service.socialimage %>" /><% } %>
 
-    <% if(service.appleid) { %><meta name="apple-itunes-app" content="app-id=<%= service.appleid %>, app-argument=<%= url %>"><% } %>
-    <% if(service.googleverification) { %><meta name="google-site-verification" content="<%= service.googleverification %>" /><% } %>
+    <%_ if(service.appleid) { %><meta name="apple-itunes-app" content="app-id=<%= service.appleid %>, app-argument=<%= url %>"><% } _%>
+    <%_ if(service.googleverification) { %><meta name="google-site-verification" content="<%= service.googleverification %>" /><% } _%>
 
     <title><%= title %> | <%= name %></title>
 

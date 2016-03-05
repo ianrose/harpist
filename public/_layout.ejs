@@ -1,14 +1,14 @@
-<% include _includes/typogr %>
+<%_ include _includes/typogr _%>
 <!doctype html>
 <html lang="en">
-  <% include _includes/head %>
+  <%_ include _includes/head _%>
   <body>
-    <% include _includes/header %>
+    <%_ include _includes/header _%>
     <main>
       <%- typogr.typogrify(yield) %>
     </main>
-    <% include _includes/footer %>
-    <% include _includes/scripts %>
-    <% include _includes/analytics %>
+    <%_ include _includes/footer _%>
+    <%_ include _includes/scripts _%>
+    <%_ include _includes/analytics _%>
   </body>
 </html>
