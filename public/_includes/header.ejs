@@ -1,7 +1,19 @@
-<header class="site-header">
-  <div>
-    <h1><a href="https://github.com/ianrose/harpist"><%- title %></a></h1>
-    <p><%- description %></p>
+<div class="progress">
+	<div class="progress__bar" data-sset="progress"></div>
+</div>
+<header id="js-site-header" class="site-header gutter--horizontal" data-sset="site-header">
+	<div class="site-header__content column--2x set--center">
+		<div class="site-logo set--left"><a href="/">S</a></div>
+		<div id="js-site-title" class="site-title set--left is-hidden" data-sset="site-title">Moby Dick</div>
     <% include share %>
-  </div>
+		<div class="site-top set--right">
+			<a href="#" data-sset="top">
+				<svg version="1.1" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+        <title>Back to Top</title>
+        <desc>Go back to the top of this webpage</desc>
+        <path d="M10,2.5L16.5,9H13v8H7V9H3.5L10,2.5z"></path>
+      </svg>
+			</a>
+		</div>
+	</div>
 </header>

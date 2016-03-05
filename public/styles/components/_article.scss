@@ -1,0 +1,32 @@
+.article__body {
+  background-color: $background-color;
+  padding-top: $gutter * 4;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  dl,
+  ul,
+  ol,
+  blockquote,
+  pre {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $column-width;
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+
+  blockquote {
+    max-width: $column-width + ($gutter * 2);
+  }
+
+  blockquote p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

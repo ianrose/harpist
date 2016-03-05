@@ -1,0 +1,2 @@
+<% include moment %>
+<time class="dateline" datetime="<%= moment(results.lastPublished, 'MM DD YYYY').toISOString() %>" itemprop="datePublished"><%= moment(results.lastPublished, 'MM DD YYYY').format('MMM D, YYYY')%></time>

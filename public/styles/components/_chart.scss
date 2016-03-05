@@ -1,0 +1,18 @@
+.chart {
+  font-family: $font-sans;
+
+  .layout--bleed &,
+  .layout--full & {
+    margin-bottom: emRhythm($base-line-multi * 2);
+    margin-top: emRhythm($base-line-multi * 2);
+  }
+}
+
+.chart__tooltip {
+  @include setType(2, $ms-down1);
+  background-color: $background-color;
+  padding: 3px;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}

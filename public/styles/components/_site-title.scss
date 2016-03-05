@@ -1,0 +1,10 @@
+.site-title {
+  display: none;
+  font-family: $font-sans;
+  line-height: $site-header-height;
+  margin-right: $gutter;
+
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+}

@@ -1,0 +1,18 @@
+.progress {
+  background-color: $bar-background;
+  height: $bar-height;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.progress__bar {
+  background-color: $bar-color;
+  height: $bar-height;
+  opacity: 0;
+  transition: opacity 1s;
+  width: 0;
+}

@@ -1,0 +1,21 @@
+.share {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.share li {
+  display: inline-block;
+  margin-left: $gutter / 3;
+
+  a {
+    display: block;
+    line-height: $site-header-height;
+  }
+}
+
+.share svg {
+  height: 18px;
+  vertical-align: middle;
+  width: 18px;
+}

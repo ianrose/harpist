@@ -1,0 +1,44 @@
+.media {
+  margin-bottom: emRhythm($base-line-multi);
+}
+
+.media img {
+  display: block;
+  max-width: 100%;
+}
+
+.media--diptic {
+  img,
+  video,
+  figure {
+    margin-bottom: $base-vertical-unit;
+
+    @media (min-width: $screen-xs-min) {
+      float: left;
+      width: 50%;
+
+      &:nth-of-type(2n) {
+        padding-left: $gutter / 2;
+      }
+
+      &:nth-of-type(1) {
+        padding-right: $gutter / 2;
+      }
+    }
+  }
+}
+
+.media--video-embed {
+  @extend .ratio--16x9;
+  @extend .intrinsic;
+  width: 100%;
+
+  iframe,
+  video {
+    @extend .intrinsic__element;
+  }
+
+  &.vjs-fullscreen {
+    padding: 0;
+  }
+}

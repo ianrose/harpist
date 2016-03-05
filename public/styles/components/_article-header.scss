@@ -1,0 +1,47 @@
+.article-header {
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-header--1-2 {
+  height: 50vh;
+}
+
+.article-header--3-4 {
+  height: 75vh;
+}
+
+.article-header h1 {
+  @include setType(4, $ms-up2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  @media (min-width: $screen-sm-min) {
+    @include setType(8, $ms-up5);
+    margin-bottom: emRhythm(1, $ms-up5, $silent: true);
+  }
+}
+
+.article-header__intro {
+  margin-top: -108px;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.article-header__bg {
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+}

@@ -1,3 +1,91 @@
 //==============================================================================
 // Config Variables
 //==============================================================================
+// The config variables have default values that are just looking to be adjusted.
+// Use this variables to customize your Typesettings. Or take the whole thing
+// apart if you want :)
+
+// Font families and default text color.
+$font-sans: 'Arimo', Arial, sans-serif !default;
+$font-headline: 'Merriweather', Georgia, 'Times New Roman', serif !default;
+$font-serif: 'Merriweather', Georgia, 'Times New Roman', serif !default;
+$font-display-serif: 'Merriweather', Georgia, 'Times New Roman', serif !default;
+$font-mono: Menlo, Monaco, monospace !default;
+
+// The vertical grid unit. Margin, padding, and line-height are set to multiples
+// of this value. This is the value that determines the baseline for our vertical
+// rhythm. The default value of 6px allows more fine tuned designs that still
+// obey vertical rhythm.
+$base-vertical-unit: 9px !default;
+
+// The value that multiplies the $base-vertical-unit to get the $base-line-height.
+// This gives type an ideal line-height.
+$base-line-multi: 3 !default;
+
+// Base font size in pixels.
+$base-font-size: 17px !default;
+
+// Modular scale ratio that is used to figure out all the different font sizes
+$ms-ratio: 1.25 !default;
+
+// [1] Paragraph setting that you can turn on or off the indent of the first line
+// of a new paragraph.
+// [2] Paragraph setting that you can turn on or off to have your paragraphs ragged
+// right or justified.
+$paragraph-indent: false !default; // [1]
+$paragraph-justify: false !default; // [2]
+
+// You can optionally load type styles that use Typesettings.
+$load-typesetted: false !default;
+
+// Colors
+$dark: #000 !default;
+$dark-grey: #252525 !default;
+$grey: #737373 !default;
+$light-grey: #bdbdbd !default;
+$lighter-grey: #f0f0f0 !default;
+
+$dark-red: #a50026 !default;
+$red: #d73027 !default;
+$dark-orange: #f46d43 !default;
+$orange: #fdae61 !default;
+$dark-yellow: #fee090 !default;
+$yellow: #ffffbf !default;
+$lightest-blue: #e0f3f8 !default;
+$lighter-blue: #abd9e9 !default;
+$light-blue: #74add1 !default;
+$blue: #4575b4 !default;
+$dark-blue: #313695 !default;
+
+$background-color: #fff !default;
+
+$highlight-color: $yellow !default;
+$link-color: $light-blue !default;
+$text-color: $dark-grey !default;
+$secondary-text-color: $grey !default;
+
+// Borders
+$border-width-narrow: 1px !default;
+$border-width-normal: $base-vertical-unit !default;
+$border-width-wide: $border-width-normal * 2 !default;
+
+// Breakpoints
+$screen-xs-min: 620px !default;
+$screen-sm-min: 740px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+$screen-xs-max: ($screen-sm-min -1px) !default;
+$screen-sm-max: ($screen-md-min - 1px) !default;
+$screen-md-max: ($screen-lg-min - 1px) !default;
+
+// Layout Settings
+$column-width: 620px !default;
+$gutter: $base-vertical-unit * 2 !default;
+
+// Site Header
+$site-header-height: 40px !default;
+
+// Progress
+$bar-height: 5px !default;
+$bar-background: $grey !default;
+$bar-color: $lighter-grey !default;

@@ -1,0 +1,18 @@
+.credits {
+  text-align: center;
+}
+
+.credits__heading {
+  @include setType(3, $ms-down1);
+  margin-bottom: emRhythm(2, $ms-down1);
+}
+
+.credits__person {
+  margin-bottom: emRhythm(1);
+}
+
+.credits__responsibility {
+  color: $secondary-text-color;
+  font-family: $font-sans;
+  font-size: $ms-down1;
+}

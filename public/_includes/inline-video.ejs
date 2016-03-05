@@ -1,0 +1,23 @@
+<div class="gutter--vertical-2x
+<% if(body[i].value.style === 'hangLeft') { %>hang hang--left<% } %>
+<% if(body[i].value.style === 'hangRight') { %>hang hang--right<% } %>
+<% if(body[i].value.style === 'halfLeft'){ %>column--half set--left<% } %>
+<% if(body[i].value.style === 'halfRight'){ %>column--half set--right<% } %>
+<% if(body[i].value.style === 'wide') { %>column--2x set--center<% } %>
+<% if(body[i].value.style === 'full') { %>column--1x set--center<% } %>
+<% if(body[i].value.style === 'bleed') { %>column--bleed<% } %>
+">
+  <figure class="media">
+     <video id="<%- i %>-video" class="video-js vjs-default-skin vjs-16-9" controls preload="auto" width="1280" height="720" poster="images/project-echo.jpg" data-setup='{}'>
+       <source src="http://link.theplatform.com/s/2E2eJC/P6LguhB685Ex?metafile=none&amp;manifest=m3u" type='video/mp4'/>
+       <source src="http://link.theplatform.com/s/2E2eJC/P6LguhB685Ex?metafile=none&amp;manifest=m3u" type='video/webm'/>
+       <p class="vjs-no-js">
+         To view this video please enable JavaScript, and consider upgrading to a web browser
+         that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+       </p>
+     </video>
+     <% if(body[i].value.caption || body[i].value.source) { %>
+       <% include caption %>
+     <% } %>
+  </figure>
+</div>

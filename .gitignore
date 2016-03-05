@@ -6,3 +6,4 @@ www
 .idea/workspace.xml
 .DS_store
 bower_components
+client_id.json

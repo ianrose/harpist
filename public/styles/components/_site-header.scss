@@ -1,0 +1,41 @@
+.site-header {
+  background-color: #fff;
+  color: $text-color;
+  left: 0;
+  margin-top: $bar-height;
+  min-height: $site-header-height;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 2;
+
+  a {
+    display: block;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  svg {
+    color: $text-color;
+    fill: $text-color;
+  }
+
+  a:hover,
+  a:active,
+  a:hover svg,
+  a:active svg {
+    color: lighten($text-color, 35%);
+    fill: lighten($text-color, 35%);
+    text-decoration: none;
+  }
+}
+
+.site-header.is-top {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.site-header.is-up {
+  top: ($site-header-height + $bar-height) * -1;
+}

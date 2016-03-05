@@ -1,0 +1,22 @@
+<div data-sset="article-body" class="article__body" itemprop="articleBody">
+<% for(i in body) { %>
+  <% if (body[i].type === 'p' || body[i].type === 'h2' || body[i].type === 'h3' || body[i].type === 'h4' || body[i].type === 'h5' || body[i].type === 'h6' || body[i].type === 'pre') { %>
+    <<%- body[i].type %><% if(body[i].style === 'tombstone') { %> class="<%- body[i].style %>"<% } %>><%- body[i].value %></<%- body[i].type %>>
+  <% } %>
+  <% if(body[i].type === 'pullquote') { %>
+    <% include pullquote %>
+  <% } %>
+  <% if(body[i].type === 'blockquote') { %>
+    <% include blockquote %>
+  <% } %>
+  <% if(body[i].type === 'image') { %>
+    <% include inline-image %>
+  <% } %>
+  <% if(body[i].type === 'video') { %>
+    <% include inline-video %>
+  <% } %>
+  <% if(body[i].type === 'youtube') { %>
+    <% include youtube %>
+  <% } %>
+<% } %>
+</div>

@@ -1,0 +1,12 @@
+<header data-sset="article-header" class="article-header">
+  <div id="js-article-intro" class="article-header__intro">
+    <h1 itemprop="headline"><%- results.headline %></h1>
+  <p class="dek" itemprop="description">
+    <%- results.summary %>
+  </p>
+  <p class="byline">by  <span itemprop="author"><%- results.byline %></span> <% include dateline %></p>
+  </div>
+  <% if(results.mainArt) { %>
+    <img class="lazyload article-header__bg" src="<%- results.mainArt.url %>" data-srcset="<%- results.mainArt.url %>" alt="mainArt.alt"	srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <% } %>
+</header>

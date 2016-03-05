@@ -1,56 +1,60 @@
+// Storysettings
+
 // Configuration
 @import 'config';
 
-// Feel free to remove:
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Merriweather';
-  color: #252525;
-  text-align: center;
-}
+// Reset
+@import 'normalize';
 
-.site-header {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
-  border: 20px solid #fff;
-  box-sizing: border-box;
+@import '../vendor/typesettings/_typesettings.scss';
+// Functions
+//
 
-  h1 {
-    font-weight: boldest;
-    // font-size: 10vw;
-    font-size: 10vmax;
-    line-height: 1.5;
-    font-style: italic;
-    margin: 0;
+// Mixins
+@import 'mixins/clearfix';
+@import 'mixins/generate-ratios';
 
-    a,
-    a:link {
-      color: #252525;
-      text-decoration: underline;
-    }
+// Utilities
+@import 'utilities/align';
+@import 'utilities/clearfix';
+@import 'utilities/intrinsic';
+@import 'utilities/position';
+@import 'utilities/ratios';
 
-    a:hover,
-    a:active {
-      color: #4575b4;
-    }
-  }
-}
+// Base
+@import 'base';
 
-a {
-  color: #4575b4;
-  text-decoration: none;
-}
+// Components
+@import 'components/article';
+@import 'components/article-header';
+@import 'components/animate';
+@import 'components/captions';
+@import 'components/chart';
+@import 'components/credits';
+@import 'components/byline';
+@import 'components/dateline';
+@import 'components/dek';
+@import 'components/dropcap';
+@import 'components/footnotes';
+@import 'components/lazysizes';
+@import 'components/media';
+@import 'components/progress';
+@import 'components/pullquote';
+@import 'components/share';
+@import 'components/site-header';
+@import 'components/site-logo';
+@import 'components/site-title';
+@import 'components/site-top';
+@import 'components/slick-slider';
+@import 'components/tombstone';
+@import 'components/video-default-js';
+@import 'components/video-js-youtube';
 
-ul {
-  list-style: none;
-  padding: 0;
+// Layout
+@import 'layout/column';
+@import 'layout/gutter';
+@import 'layout/hang';
+@import 'layout/set';
 
-  li {
-    display: inline-block;
-    padding-right: 10px;
-  }
-}
+// States
+@import 'states';

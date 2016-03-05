@@ -1,0 +1,31 @@
+@media (min-width: $screen-sm-min) {
+  .viewport {
+    align-items: center;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+    @media (min-height: 720px) {
+      display: flex;
+    }
+  }
+
+  .viewport--vert-full {
+    @media (min-height: 720px) {
+      height: 100vh;
+    }
+  }
+
+  .viewpoert--hori-full {
+    width: 100vw;
+  }
+
+  .viewport--baseline {
+    align-items: baseline;
+  }
+
+  .viewport--start {
+    align-items: flex-start;
+  }
+}

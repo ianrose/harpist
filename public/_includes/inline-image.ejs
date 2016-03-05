@@ -1,0 +1,16 @@
+<div class="
+<% if(body[i].value.style === 'hangLeft') { %>hang hang--left<% } %>
+<% if(body[i].value.style === 'hangRight') { %>hang hang--right<% } %>
+<% if(body[i].value.style === 'halfLeft'){ %>column--half set--left<% } %>
+<% if(body[i].value.style === 'halfRight'){ %>column--half set--right<% } %>
+<% if(body[i].value.style === 'wide') { %>column--2x set--center gutter--vertical-2x<% } %>
+<% if(body[i].value.style === 'full') { %>column--1x set--center gutter--vertical-2x<% } %>
+<% if(body[i].value.style === 'bleed') { %>column--bleed gutter--vertical-2x<% } %>
+">
+<figure class="media">
+  <img class="lazyload" src="<%- body[i].value.url %>" data-srcset="<%- body[i].value.url %>"	srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <% if(body[i].value.caption || body[i].value.source) { %>
+    <% include caption %>
+  <% } %>
+</figure>
+</div>
