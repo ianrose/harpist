@@ -10,6 +10,7 @@
 - [jQuery](https://github.com/jquery/jquery)
 - [Typesettings](https://github.com/ianrose/typesettings)
 - [Video.js](https://github.com/videojs/video.js)
+- [typogr.js](https://github.com/ekalinin/typogr.js)
 
 ## How to Setup
 
