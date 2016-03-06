@@ -13,15 +13,17 @@
     "harp": "^0.20.1",
     "imagemin-cli": "^2.1.0",
     "jshint": "^2.9.1",
+    "postcss-cli-simple": "^1.0.1",
     "recursive-uglifyjs": "^1.0.0"
   },
   "scripts": {
     "postinstall": "bower-installer",
+    "poststyles": "postcss --use autoprefixer --autoprefixer.browsers \"last 3 versions\" -o ./www/styles/*.css ./www/styles/*.css",
     "test": "jshint ./public/**/*.js & csslint-cli ./www/styles/",
     "dev": "harp server & browser-sync start --no-open --proxy 'localhost:9000' --files './public/**/*.ejs, public/**/*.jade, ./harp.json, ./public/**/*.js, public/**/*.md, ./public/**/*.scss, public/**/*.sass, ./public/**/*.less, ./public/**/*.css, ./public/**/_data.json'",
     "uglify": "recursive-uglifyjs ./www/",
     "compile": "harp compile && npm test",
-    "postcompile": "npm run uglify && npm run imagemin",
+    "postcompile": "npm run uglify && npm run imagemin && npm run poststyles",
     "imagemin": "imagemin ./public/images/ ./www/images/ --optimizationLevel 3 --progressive"
   },
   "engines": {
@@ -33,6 +35,7 @@
     "express": "^4.13.4",
     "glass-tabletop": "^0.2.1",
     "googleapis": "^2.1.7",
+    "googlesheets-reader": "0.0.1",
     "html-entities": "^1.2.0",
     "htmlparser2": "^3.9.0",
     "json-stringify-safe": "^5.0.1"

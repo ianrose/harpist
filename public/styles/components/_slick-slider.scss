@@ -4,7 +4,7 @@
   .layout--full & {
     margin-bottom: emRhythm($base-line-multi * 2);
     margin-top: emRhythm($base-line-multi * 2);
- }
+  }
 }
 
 .slick-arrow {
@@ -32,7 +32,7 @@
   right: $gutter;
 
   &:before {
-    content: '›';
+    content: "›";
   }
 }
 
@@ -40,7 +40,7 @@
   left: $gutter;
 
   &:before {
-    content: '‹';
+    content: "‹";
   }
 }
 
@@ -80,7 +80,7 @@
 
   &:before {
     color: $light-grey;
-    content: '•';
+    content: "•";
     font-size: $base-font-size;
     font-weight: 900;
     height: $gutter;

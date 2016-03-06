@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "font-family-name-quotes": "double-where-recommended",
+    "indentation": 2,
+    "max-empty-lines": 1,
+    "rule-properties-order": "alphabetical",
+    "selector-pseudo-element-colon-notation": "single",
+    "string-quotes": "double",
+  },
+}
