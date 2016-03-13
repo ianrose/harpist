@@ -8,7 +8,7 @@
 <% if(body[i].value.style === 'bleed') { %>column--bleed gutter--vertical-2x<% } %>
 ">
   <figure class="media">
-  	<video id="<%- i %>-video" class="video-js vjs-default-skin vjs-16-9" controls width="1280" height="720" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "<%- body[i].value.url %>"}] }'>
+  	<video id="<%- i %>-video" class="video-js vjs-default-skin vjs-16-9" controls width="1280" height="720" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/JriqnypuQeo?list=PLgBDl7UudbRkbeRn5tcFCgp_-HydTIrw5}] }'>
   	</video>
     <% if(body[i].value.caption || body[i].value.source) { %>
       <% include caption %>
