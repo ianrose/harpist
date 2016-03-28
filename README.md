@@ -22,12 +22,15 @@ Install dependencies:
 ```
 $ npm install
 ```
+Optionally if you want to use Google Docs/Sheets to provide data you will need to get oAuth credentials. `config_gdocs.json`
 
 ## How to use
 
 To develop with harpist: `$ npm run dev`
 
 To generate with harpist: `$ npm run compile`
+
+To pull data from a Google Doc '$ npm run ingest'
 
 After Harpist is running be sure to update `harp.json` with your project specifics.
 
