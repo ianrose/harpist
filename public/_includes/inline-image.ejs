@@ -8,7 +8,7 @@
 <% if(body[i].value.style === 'bleed') { %>column--bleed gutter--vertical-2x<% } %>
 ">
 <figure class="media">
-  <img class="lazyload" src="<%- body[i].value.url %>" data-srcset="<%- body[i].value.url %>"	srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <img class="lazyload" src="<%- body[i].value.url %>" data-srcset="<%- body[i].value.url %>"	srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" <% if(body[i].value.style === 'halfLeft' || body[i].value.style === 'halfRight' || body[i].value.style === 'full') { %> data-action="zoom" <% } %>>
   <% if(body[i].value.caption || body[i].value.source) { %>
     <% include caption %>
   <% } %>
