@@ -1,6 +1,6 @@
 {
   "name": "Harpist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Longform Boilerplate using Harp.js",
   "private": true,
   "main": "public/index.ejs",
