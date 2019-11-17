@@ -1,4 +1,6 @@
-# Harpist (In Development)
+**Not Maintained. Suggest looking at https://github.com/ianrose/deventy**
+
+# Harpist (Not Maintained)
 
 [Harp](https://github.com/sintaxi/harp) static site generator with:
 
